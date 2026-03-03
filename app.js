@@ -1,4 +1,4 @@
-/* app.js — Fund Dashboard Application Logic */
+/* app.js \u2014 Fund Dashboard Application Logic */
 (function () {
   'use strict';
 
@@ -7,20 +7,20 @@
   const $$ = (s, p) => [...(p || document).querySelectorAll(s)];
 
   function fmtNum(n, decimals) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     return n.toLocaleString('zh-CN', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
   }
 
   function fmtPct(n) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     const sign = n > 0 ? '+' : '';
     return sign + n.toFixed(2) + '%';
   }
 
   function fmtYi(n) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     const sign = n > 0 ? '+' : '';
-    return sign + n.toFixed(2) + '亿';
+    return sign + n.toFixed(2) + '\u4ebf';
   }
 
   function colorClass(val) {
@@ -51,10 +51,10 @@
   function renderHeader() {
     const meta = data.metadata;
     $('#tradingDate').textContent = meta.trading_date;
-    $('#updateTime').textContent = '更新: ' + meta.updated_at;
+    $('#updateTime').textContent = '\u66f4\u65b0: ' + meta.updated_at;
 
     // Time bar
-    $('#lastUpdate').textContent = meta.updated_at + '（北京时间）';
+    $('#lastUpdate').textContent = meta.updated_at + '\uff08\u5317\u4eac\u65f6\u95f4\uff09';
 
     // Calculate next update: next weekday at 16:30 Beijing time
     const parts = meta.updated_at.split(/[\-\s:]/);
@@ -80,9 +80,9 @@
     const y = next.getUTCFullYear();
     const m = String(next.getUTCMonth() + 1).padStart(2, '0');
     const d = String(next.getUTCDate()).padStart(2, '0');
-    const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+    const weekdays = ['\u5468\u65e5', '\u5468\u4e00', '\u5468\u4e8c', '\u5468\u4e09', '\u5468\u56db', '\u5468\u4e94', '\u5468\u516d'];
     const wd = weekdays[next.getUTCDay()];
-    $('#nextUpdate').textContent = `${y}-${m}-${d} 16:30 ${wd}（北京时间）`;
+    $('#nextUpdate').textContent = `${y}-${m}-${d} 16:30 ${wd}\uff08\u5317\u4eac\u65f6\u95f4\uff09`;
   }
 
   // ---- Index Cards ----
@@ -98,7 +98,7 @@
             <span>${fmtPct(idx.change_pct)}</span>
             <span>${idx.change_amt > 0 ? '+' : ''}${fmtNum(idx.change_amt, 2)}</span>
           </div>
-          <div class="idx-amp">振幅 ${fmtNum(idx.amplitude, 2)}%</div>
+          <div class="idx-amp">\u632f\u5e45 ${fmtNum(idx.amplitude, 2)}%</div>
         </div>`;
     }).join('');
   }
@@ -131,7 +131,7 @@
       else bg = 'rgba(15,150,65,0.85)';
 
       return `
-        <div class="hm-cell" style="width:${size}px;height:${Math.round(size * 0.6)}px;background:${bg};flex-grow:${Math.round(ratio * 10)}" title="${b.name}: ${fmtPct(b.change_pct)} | 领涨: ${b.leader_name} ${fmtPct(b.leader_change_pct)}">
+        <div class="hm-cell" style="width:${size}px;height:${Math.round(size * 0.6)}px;background:${bg};flex-grow:${Math.round(ratio * 10)}" title="${b.name}: ${fmtPct(b.change_pct)} | \u9886\u6da8: ${b.leader_name} ${fmtPct(b.leader_change_pct)}">
           <span class="hm-name">${b.name}</span>
           <span class="hm-pct">${b.change_pct > 0 ? '+' : ''}${b.change_pct.toFixed(2)}%</span>
         </div>`;
@@ -189,11 +189,11 @@
         rankHtml = rank;
       }
 
-      const fType = f.type || '其他';
+      const fType = f.type || '\u5176\u4ed6';
       const typeClass = 'type-' + fType;
 
       const pctCell = (val) => {
-        if (val == null || isNaN(val)) return '<td class="val-flat">—</td>';
+        if (val == null || isNaN(val)) return '<td class="val-flat">\u2014</td>';
         return `<td class="${colorClass(val)}">${fmtPct(val)}</td>`;
       };
 
@@ -209,7 +209,7 @@
         ${pctCell(f.month_6)}
         ${pctCell(f.year_1)}
         ${pctCell(f.ytd)}
-        <td>${f.fee || '—'}</td>
+        <td>${f.fee || '\u2014'}</td>
       </tr>`;
     }).join('');
 
@@ -220,7 +220,7 @@
       th.classList.remove('sorted-desc', 'sorted-asc');
       if (key === currentSort) {
         th.classList.add(sortDir === 'desc' ? 'sorted-desc' : 'sorted-asc');
-        arrow.textContent = sortDir === 'desc' ? '▼' : '▲';
+        arrow.textContent = sortDir === 'desc' ? '\u25bc' : '\u25b2';
       } else {
         arrow.textContent = '';
       }
@@ -269,23 +269,23 @@
     const topFund = funds[0];
     const card1 = `
       <div class="insight-card">
-        <div class="insight-label">今日涨幅最高基金</div>
+        <div class="insight-label">\u4eca\u65e5\u6da8\u5e45\u6700\u9ad8\u57fa\u91d1</div>
         <div class="insight-value">
           ${topFund.name}
           <span class="highlight-up">(${fmtPct(topFund.daily_return)})</span>
         </div>
-        <div class="insight-sub">基金代码 ${topFund.code} · ${topFund.type} · 近1月${fmtPct(topFund.month_1)}</div>
+        <div class="insight-sub">\u57fa\u91d1\u4ee3\u7801 ${topFund.code} \u00b7 ${topFund.type} \u00b7 \u8fd11\u6708${fmtPct(topFund.month_1)}</div>
       </div>`;
 
     // 2. Top 3 industry sectors
     const topBoards = [...boards].sort((a, b) => b.change_pct - a.change_pct).slice(0, 3);
     const card2 = `
       <div class="insight-card">
-        <div class="insight-label">今日涨幅行业板块 Top 3</div>
+        <div class="insight-label">\u4eca\u65e5\u6da8\u5e45\u884c\u4e1a\u677f\u5757 Top 3</div>
         <div class="insight-value">
-          ${topBoards.map((b, i) => `${b.name} <span class="highlight-up">${fmtPct(b.change_pct)}</span>`).join('、')}
+          ${topBoards.map((b, i) => `${b.name} <span class="highlight-up">${fmtPct(b.change_pct)}</span>`).join('\u3001')}
         </div>
-        <div class="insight-sub">领涨个股: ${topBoards.map(b => b.leader_name).join('、')}</div>
+        <div class="insight-sub">\u9886\u6da8\u4e2a\u80a1: ${topBoards.map(b => b.leader_name).join('\u3001')}</div>
       </div>`;
 
     // 3. 5-day main flow
@@ -293,11 +293,11 @@
     const mainColor = totalMain >= 0 ? 'highlight-up' : 'highlight-down';
     const card3 = `
       <div class="insight-card">
-        <div class="insight-label">过去5天主力资金累计净流入</div>
+        <div class="insight-label">\u8fc7\u53bb5\u5929\u4e3b\u529b\u8d44\u91d1\u7d2f\u8ba1\u51c0\u6d41\u5165</div>
         <div class="insight-value">
           <span class="${mainColor}">${fmtYi(totalMain)}</span>
         </div>
-        <div class="insight-sub">日均净流入 ${fmtYi(totalMain / flow.length)} · 最近一日 ${fmtYi(flow[flow.length - 1].main_net_inflow)}</div>
+        <div class="insight-sub">\u65e5\u5747\u51c0\u6d41\u5165 ${fmtYi(totalMain / flow.length)} \u00b7 \u6700\u8fd1\u4e00\u65e5 ${fmtYi(flow[flow.length - 1].main_net_inflow)}</div>
       </div>`;
 
     // 4. Consistently high performers
@@ -316,21 +316,74 @@
 
     let consistentHtml;
     if (consistent.length === 0) {
-      consistentHtml = '<span style="color:var(--color-text-muted)">暂无同时在三个维度排名前列的基金</span>';
+      consistentHtml = '<span style="color:var(--color-text-muted)">\u6682\u65e0\u540c\u65f6\u5728\u4e09\u4e2a\u7ef4\u5ea6\u6392\u540d\u524d\u5217\u7684\u57fa\u91d1</span>';
     } else {
       consistentHtml = consistent.map(f =>
-        `${f.name} <span class="highlight-up">(日${fmtPct(f.daily_return)} / 月${fmtPct(f.month_1)} / 3月${fmtPct(f.month_3)})</span>`
+        `${f.name} <span class="highlight-up">(\u65e5${fmtPct(f.daily_return)} / \u6708${fmtPct(f.month_1)} / 3\u6708${fmtPct(f.month_3)})</span>`
       ).join('<br>');
     }
 
     const card4 = `
       <div class="insight-card">
-        <div class="insight-label">日/月/3月涨幅均排前列的基金</div>
+        <div class="insight-label">\u65e5/\u6708/3\u6708\u6da8\u5e45\u5747\u6392\u524d\u5217\u7684\u57fa\u91d1</div>
         <div class="insight-value">${consistentHtml}</div>
-        <div class="insight-sub">筛选条件: 日涨幅、近1月、近3月均排名前15</div>
+        <div class="insight-sub">\u7b5b\u9009\u6761\u4ef6: \u65e5\u6da8\u5e45\u3001\u8fd11\u6708\u3001\u8fd13\u6708\u5747\u6392\u540d\u524d15</div>
       </div>`;
 
     grid.innerHTML = card1 + card2 + card3 + card4;
+  }
+
+  // ---- News Section ----
+  const categoryIcons = {
+    '\u76d1\u7ba1\u653f\u7b56': '\u2696\ufe0f',
+    '\u5e02\u573a\u52a8\u6001': '\u1f4c8',
+    '\u57fa\u91d1\u53d1\u884c': '\u1f195',
+    '\u884c\u4e1a\u5206\u6790': '\u1f50d',
+    '\u4eba\u4e8b\u53d8\u52a8': '\u1f464',
+    '\u56fd\u9645\u89c6\u89d2': '\u1f30f'
+  };
+
+  let currentNewsFilter = 'all';
+
+  function renderNews() {
+    const list = $('#newsList');
+    const newsData = data.news || [];
+
+    const filtered = currentNewsFilter === 'all'
+      ? newsData
+      : newsData.filter(n => n.category === currentNewsFilter);
+
+    if (filtered.length === 0) {
+      list.innerHTML = '<div class="news-empty">\u6682\u65e0\u8be5\u5206\u7c7b\u65b0\u95fb</div>';
+      return;
+    }
+
+    list.innerHTML = filtered.map(item => {
+      const icon = categoryIcons[item.category] || '\u1f4f0';
+      return `
+        <a class="news-item" href="${item.url}" target="_blank" rel="noopener">
+          <div class="news-item-top">
+            <span class="news-cat">${icon} ${item.category}</span>
+            <span class="news-date">${item.date}</span>
+          </div>
+          <div class="news-title">${item.title}</div>
+          <div class="news-summary">${item.summary}</div>
+          <div class="news-source">\u6765\u6e90\uff1a${item.source}</div>
+        </a>`;
+    }).join('');
+  }
+
+  function initNewsFilters() {
+    const container = $('#newsFilters');
+    if (!container) return;
+    container.addEventListener('click', (e) => {
+      const btn = e.target.closest('.news-filter-btn');
+      if (!btn) return;
+      $$('.news-filter-btn', container).forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentNewsFilter = btn.dataset.filter;
+      renderNews();
+    });
   }
 
   // ---- Init ----
@@ -343,6 +396,8 @@
     initTabs();
     initSort();
     renderInsights();
+    renderNews();
+    initNewsFilters();
   }
 
   if (document.readyState === 'loading') {
