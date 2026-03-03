@@ -141,7 +141,12 @@
   // ---- Fund Flow Table ----
   function renderFundFlow() {
     const tbody = $('#flowBody');
-    tbody.innerHTML = data.fund_flow.map(row => {
+    const flowData = data.fund_flow || [];
+    if (flowData.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--color-text-muted)">\u8d44\u91d1\u6d41\u5411\u6570\u636e\u6682\u672a\u66f4\u65b0</td></tr>';
+      return;
+    }
+    tbody.innerHTML = flowData.map(row => {
       return `<tr>
         <td>${row.date}</td>
         <td class="${colorClass(row.main_net_inflow)}">${fmtYi(row.main_net_inflow)}</td>
@@ -160,7 +165,6 @@
 
   function getCurrentFunds() {
     if (currentTab === 'top50') return [...data.top_funds];
-    // Category funds may not have a 'type' field, inject it from tab name
     return (data.category_funds[currentTab] || []).map(f => ({
       ...f,
       type: f.type || currentTab
@@ -261,9 +265,14 @@
   // ---- Insights ----
   function renderInsights() {
     const grid = $('#insightsGrid');
-    const funds = data.top_funds;
-    const boards = data.industry_boards;
-    const flow = data.fund_flow;
+    const funds = data.top_funds || [];
+    const boards = data.industry_boards || [];
+    const flow = data.fund_flow || [];
+
+    if (funds.length === 0) {
+      grid.innerHTML = '<div class="insight-card"><div class="insight-label">\u6682\u65e0\u6570\u636e</div></div>';
+      return;
+    }
 
     // 1. Today's top fund
     const topFund = funds[0];
@@ -279,29 +288,29 @@
 
     // 2. Top 3 industry sectors
     const topBoards = [...boards].sort((a, b) => b.change_pct - a.change_pct).slice(0, 3);
-    const card2 = `
+    const card2 = topBoards.length > 0 ? `
       <div class="insight-card">
         <div class="insight-label">\u4eca\u65e5\u6da8\u5e45\u884c\u4e1a\u677f\u5757 Top 3</div>
         <div class="insight-value">
           ${topBoards.map((b, i) => `${b.name} <span class="highlight-up">${fmtPct(b.change_pct)}</span>`).join('\u3001')}
         </div>
         <div class="insight-sub">\u9886\u6da8\u4e2a\u80a1: ${topBoards.map(b => b.leader_name).join('\u3001')}</div>
-      </div>`;
+      </div>` : '';
 
     // 3. 5-day main flow
     const totalMain = flow.reduce((s, r) => s + r.main_net_inflow, 0);
     const mainColor = totalMain >= 0 ? 'highlight-up' : 'highlight-down';
+    const lastFlow = flow.length > 0 ? flow[flow.length - 1] : null;
     const card3 = `
       <div class="insight-card">
         <div class="insight-label">\u8fc7\u53bb5\u5929\u4e3b\u529b\u8d44\u91d1\u7d2f\u8ba1\u51c0\u6d41\u5165</div>
         <div class="insight-value">
-          <span class="${mainColor}">${fmtYi(totalMain)}</span>
+          <span class="${mainColor}">${flow.length > 0 ? fmtYi(totalMain) : '\u6682\u65e0\u6570\u636e'}</span>
         </div>
-        <div class="insight-sub">\u65e5\u5747\u51c0\u6d41\u5165 ${fmtYi(totalMain / flow.length)} \u00b7 \u6700\u8fd1\u4e00\u65e5 ${fmtYi(flow[flow.length - 1].main_net_inflow)}</div>
+        <div class="insight-sub">${flow.length > 0 ? '\u65e5\u5747\u51c0\u6d41\u5165 ' + fmtYi(totalMain / flow.length) + ' \u00b7 \u6700\u8fd1\u4e00\u65e5 ' + fmtYi(lastFlow.main_net_inflow) : '\u8d44\u91d1\u6d41\u5411\u6570\u636e\u6682\u672a\u66f4\u65b0'}</div>
       </div>`;
 
     // 4. Consistently high performers
-    // Find funds in top_funds that are in top 15 for daily AND month_1 AND month_3
     const byDaily = [...funds].sort((a, b) => (b.daily_return || 0) - (a.daily_return || 0));
     const byMonth1 = [...funds].sort((a, b) => (b.month_1 || 0) - (a.month_1 || 0));
     const byMonth3 = [...funds].sort((a, b) => (b.month_3 || 0) - (a.month_3 || 0));
@@ -388,16 +397,21 @@
 
   // ---- Init ----
   function init() {
-    renderHeader();
-    renderIndexCards();
-    renderHeatmap();
-    renderFundFlow();
-    renderFundTable();
-    initTabs();
-    initSort();
-    renderInsights();
-    renderNews();
-    initNewsFilters();
+    const steps = [
+      ['header', renderHeader],
+      ['indexCards', renderIndexCards],
+      ['heatmap', renderHeatmap],
+      ['fundFlow', renderFundFlow],
+      ['fundTable', renderFundTable],
+      ['tabs', initTabs],
+      ['sort', initSort],
+      ['insights', renderInsights],
+      ['news', renderNews],
+      ['newsFilters', initNewsFilters],
+    ];
+    for (const [name, fn] of steps) {
+      try { fn(); } catch (e) { console.error('Render error in ' + name + ':', e); }
+    }
   }
 
   if (document.readyState === 'loading') {
