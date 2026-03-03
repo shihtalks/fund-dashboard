@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-每日自动采集公募基金数据，生成 data.js
+每日自动采集公募基金数据，生成 data chunk files
 数据来源：AKShare（东方财富/天天基金）、新浪财经
 """
 import json
@@ -64,7 +64,7 @@ def fetch_industry_boards():
     try:
         url = "https://vip.stock.finance.sina.com.cn/q/view/newSinaHy.php"
         resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
-        match = re.search(r"=\s*({.*})", resp.text, re.DOTALL)
+        match = re.search(r"=\\s*({.*})", resp.text, re.DOTALL)
         if match:
             raw = json.loads(match.group(1))
             boards = []
@@ -207,11 +207,33 @@ def main():
         "trading_date": data["top_funds"][0]["date"] if data["top_funds"] else datetime.now().strftime("%Y-%m-%d"),
     }
 
-    # Write data.js
-    js = "const FUND_DATA = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n"
-    with open("data.js", "w", encoding="utf-8") as f:
+    # Write chunked data files (to avoid GitHub API size limits)
+    # data-market.js
+    market = {"indices": data["indices"], "industry_boards": data["industry_boards"], "fund_flow": data["fund_flow"]}
+    write_js_file("data-market.js", "FUND_DATA_MARKET", market)
+
+    # data-top-funds.js
+    write_js_file("data-top-funds.js", "FUND_DATA_TOP", {"top_funds": data["top_funds"]})
+
+    # data-cat1.js
+    cat1 = {k: data["category_funds"].get(k, []) for k in ["股票型", "混合型", "债券型"]}
+    write_js_file("data-cat1.js", "FUND_DATA_CAT1", cat1)
+
+    # data-cat2.js
+    cat2 = {k: data["category_funds"].get(k, []) for k in ["指数型", "QDII", "FOF"]}
+    write_js_file("data-cat2.js", "FUND_DATA_CAT2", cat2)
+
+    # data-meta.js
+    write_js_file("data-meta.js", "FUND_DATA_META", {"metadata": data["metadata"]})
+
+    print("\nAll data chunk files written.")
+
+
+def write_js_file(filename, var_name, obj):
+    js = f"const {var_name} = " + json.dumps(obj, ensure_ascii=False, indent=2) + ";\n"
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(js)
-    print(f"\ndata.js written ({len(js)/1024:.1f} KB)")
+    print(f"  {filename} written ({len(js)/1024:.1f} KB)")
 
 
 if __name__ == "__main__":
