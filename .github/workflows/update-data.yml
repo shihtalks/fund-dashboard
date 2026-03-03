@@ -31,6 +31,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "\u1f4ca \u66f4\u65b0\u57fa\u91d1\u6570\u636e $(date -u +%Y-%m-%d)"
+            git commit -m "\ud83d\udcca \u66f4\u65b0\u57fa\u91d1\u6570\u636e $(date -u +%Y-%m-%d)"
             git push
           fi
