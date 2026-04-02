@@ -1,6 +1,6 @@
 const FUND_DATA_META = {
   "metadata": {
-    "updated_at": "2026-04-01 09:45:08",
-    "trading_date": "2026-03-31"
+    "updated_at": "2026-04-02 09:34:57",
+    "trading_date": "2026-04-01"
   }
 };
