@@ -145,6 +145,30 @@ const FUND_DATA_CAT1 = {
       "fee": "0.15%"
     },
     {
+      "code": "010013",
+      "name": "易方达信息行业精选股票A",
+      "daily_return": 2.96,
+      "week_1": 1.98,
+      "month_1": 2.93,
+      "month_3": 7.97,
+      "month_6": 9.19,
+      "year_1": 119.22,
+      "ytd": 7.97,
+      "fee": "0.15%"
+    },
+    {
+      "code": "019024",
+      "name": "易方达信息行业精选股票C",
+      "daily_return": 2.96,
+      "week_1": 1.97,
+      "month_1": 2.88,
+      "month_3": 7.83,
+      "month_6": 8.9,
+      "year_1": 118.11,
+      "ytd": 7.83,
+      "fee": "0.00%"
+    },
+    {
       "code": "009491",
       "name": "宝盈创新驱动股票A",
       "daily_return": 2.68,
@@ -193,18 +217,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.00%"
     },
     {
-      "code": "021500",
-      "name": "景顺长城优质成长股票C",
-      "daily_return": 2.59,
-      "week_1": 1.03,
-      "month_1": 0.15,
-      "month_3": 9.44,
-      "month_6": 22.48,
-      "year_1": 117.19,
-      "ytd": 9.44,
-      "fee": "0.00%"
-    },
-    {
       "code": "017489",
       "name": "嘉实信息产业股票发起式C",
       "daily_return": 2.59,
@@ -214,6 +226,18 @@ const FUND_DATA_CAT1 = {
       "month_6": 11.0,
       "year_1": 81.64,
       "ytd": 11.27,
+      "fee": "0.00%"
+    },
+    {
+      "code": "021500",
+      "name": "景顺长城优质成长股票C",
+      "daily_return": 2.59,
+      "week_1": 1.03,
+      "month_1": 0.15,
+      "month_3": 9.44,
+      "month_6": 22.48,
+      "year_1": 117.19,
+      "ytd": 9.44,
       "fee": "0.00%"
     },
     {
@@ -241,18 +265,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.15%"
     },
     {
-      "code": "025415",
-      "name": "新华策略精选股票C",
-      "daily_return": 2.42,
-      "week_1": 1.34,
-      "month_1": -5.5,
-      "month_3": 18.13,
-      "month_6": 22.37,
-      "year_1": null,
-      "ytd": 18.13,
-      "fee": "0.00%"
-    },
-    {
       "code": "001040",
       "name": "新华策略精选股票A",
       "daily_return": 2.42,
@@ -265,6 +277,42 @@ const FUND_DATA_CAT1 = {
       "fee": "0.15%"
     },
     {
+      "code": "025415",
+      "name": "新华策略精选股票C",
+      "daily_return": 2.42,
+      "week_1": 1.34,
+      "month_1": -5.5,
+      "month_3": 18.13,
+      "month_6": 22.37,
+      "year_1": null,
+      "ytd": 18.13,
+      "fee": "0.00%"
+    },
+    {
+      "code": "005777",
+      "name": "广发科技动力股票",
+      "daily_return": 2.3,
+      "week_1": 3.09,
+      "month_1": 1.28,
+      "month_3": 8.49,
+      "month_6": 10.67,
+      "year_1": 43.16,
+      "ytd": 8.49,
+      "fee": "0.15%"
+    },
+    {
+      "code": "021313",
+      "name": "景顺长城沪港深精选股票C",
+      "daily_return": 2.28,
+      "week_1": 0.95,
+      "month_1": -0.43,
+      "month_3": 3.75,
+      "month_6": 10.89,
+      "year_1": 76.51,
+      "ytd": 3.75,
+      "fee": "0.00%"
+    },
+    {
       "code": "001749",
       "name": "招商中国机遇股票A",
       "daily_return": 2.27,
@@ -274,6 +322,18 @@ const FUND_DATA_CAT1 = {
       "month_6": 2.85,
       "year_1": 45.88,
       "ytd": 1.8,
+      "fee": "0.15%"
+    },
+    {
+      "code": "000979",
+      "name": "景顺长城沪港深精选股票A",
+      "daily_return": 2.27,
+      "week_1": 0.96,
+      "month_1": -0.37,
+      "month_3": 3.92,
+      "month_6": 11.23,
+      "year_1": 77.6,
+      "ytd": 3.92,
       "fee": "0.15%"
     },
     {
@@ -299,66 +359,6 @@ const FUND_DATA_CAT1 = {
       "year_1": 122.04,
       "ytd": 12.05,
       "fee": "0.15%"
-    },
-    {
-      "code": "010236",
-      "name": "广发电子信息传媒股票C",
-      "daily_return": 2.07,
-      "week_1": 3.28,
-      "month_1": -1.05,
-      "month_3": 6.4,
-      "month_6": 14.14,
-      "year_1": 69.6,
-      "ytd": 6.4,
-      "fee": "0.00%"
-    },
-    {
-      "code": "005310",
-      "name": "广发电子信息传媒股票A",
-      "daily_return": 2.07,
-      "week_1": 3.29,
-      "month_1": -1.02,
-      "month_3": 6.51,
-      "month_6": 14.37,
-      "year_1": 70.28,
-      "ytd": 6.51,
-      "fee": "0.15%"
-    },
-    {
-      "code": "015475",
-      "name": "天弘文化新兴产业股票C",
-      "daily_return": 2.04,
-      "week_1": -0.36,
-      "month_1": -6.65,
-      "month_3": 4.78,
-      "month_6": -2.02,
-      "year_1": 19.88,
-      "ytd": 4.78,
-      "fee": "0.00%"
-    },
-    {
-      "code": "164205",
-      "name": "天弘文化新兴产业股票A",
-      "daily_return": 2.04,
-      "week_1": -0.35,
-      "month_1": -6.62,
-      "month_3": 4.88,
-      "month_6": -1.83,
-      "year_1": 20.36,
-      "ytd": 4.88,
-      "fee": "0.15%"
-    },
-    {
-      "code": "026290",
-      "name": "红土创新科技创新股票(LOF)C",
-      "daily_return": 2.0,
-      "week_1": -1.58,
-      "month_1": 0.32,
-      "month_3": 24.12,
-      "month_6": null,
-      "year_1": null,
-      "ytd": 24.12,
-      "fee": "0.00%"
     }
   ],
   "混合型": [
@@ -507,18 +507,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.00%"
     },
     {
-      "code": "025422",
-      "name": "浦银安盛数字经济混合C",
-      "daily_return": 4.75,
-      "week_1": 4.77,
-      "month_1": 6.14,
-      "month_3": 36.05,
-      "month_6": 64.92,
-      "year_1": null,
-      "ytd": 36.05,
-      "fee": "0.00%"
-    },
-    {
       "code": "025421",
       "name": "浦银安盛数字经济混合A",
       "daily_return": 4.75,
@@ -529,6 +517,18 @@ const FUND_DATA_CAT1 = {
       "year_1": null,
       "ytd": 36.38,
       "fee": "0.15%"
+    },
+    {
+      "code": "025422",
+      "name": "浦银安盛数字经济混合C",
+      "daily_return": 4.75,
+      "week_1": 4.77,
+      "month_1": 6.14,
+      "month_3": 36.05,
+      "month_6": 64.92,
+      "year_1": null,
+      "ytd": 36.05,
+      "fee": "0.00%"
     },
     {
       "code": "002272",
@@ -663,18 +663,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.15%"
     },
     {
-      "code": "001608",
-      "name": "英大策略优选C",
-      "daily_return": 4.28,
-      "week_1": 3.33,
-      "month_1": 4.21,
-      "month_3": 16.54,
-      "month_6": 15.44,
-      "year_1": 62.08,
-      "ytd": 16.54,
-      "fee": "0.00%"
-    },
-    {
       "code": "001607",
       "name": "英大策略优选A",
       "daily_return": 4.28,
@@ -685,6 +673,18 @@ const FUND_DATA_CAT1 = {
       "year_1": 62.72,
       "ytd": 16.65,
       "fee": "0.08%"
+    },
+    {
+      "code": "001608",
+      "name": "英大策略优选C",
+      "daily_return": 4.28,
+      "week_1": 3.33,
+      "month_1": 4.21,
+      "month_3": 16.54,
+      "month_6": 15.44,
+      "year_1": 62.08,
+      "ytd": 16.54,
+      "fee": "0.00%"
     },
     {
       "code": "016632",
@@ -773,18 +773,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.08%"
     },
     {
-      "code": "023512",
-      "name": "景顺长城景颐丰利债券F",
-      "daily_return": 0.7,
-      "week_1": 0.55,
-      "month_1": 0.47,
-      "month_3": 1.48,
-      "month_6": 3.92,
-      "year_1": 25.92,
-      "ytd": 1.48,
-      "fee": "0.00%"
-    },
-    {
       "code": "003505",
       "name": "景顺长城景颐丰利债券C",
       "daily_return": 0.7,
@@ -797,16 +785,16 @@ const FUND_DATA_CAT1 = {
       "fee": "0.00%"
     },
     {
-      "code": "022744",
-      "name": "广发可转债债券D",
-      "daily_return": 0.69,
-      "week_1": -1.89,
-      "month_1": -8.06,
-      "month_3": -4.05,
-      "month_6": -2.73,
-      "year_1": 20.03,
-      "ytd": -4.05,
-      "fee": "0.11%"
+      "code": "023512",
+      "name": "景顺长城景颐丰利债券F",
+      "daily_return": 0.7,
+      "week_1": 0.55,
+      "month_1": 0.47,
+      "month_3": 1.48,
+      "month_6": 3.92,
+      "year_1": 25.92,
+      "ytd": 1.48,
+      "fee": "0.00%"
     },
     {
       "code": "006483",
@@ -821,18 +809,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.00%"
     },
     {
-      "code": "010629",
-      "name": "广发可转债债券E",
-      "daily_return": 0.69,
-      "week_1": -1.89,
-      "month_1": -8.08,
-      "month_3": -4.1,
-      "month_6": -2.83,
-      "year_1": 19.79,
-      "ytd": -4.1,
-      "fee": "0.00%"
-    },
-    {
       "code": "006482",
       "name": "广发可转债债券A",
       "daily_return": 0.69,
@@ -843,6 +819,30 @@ const FUND_DATA_CAT1 = {
       "year_1": 20.03,
       "ytd": -4.05,
       "fee": "0.10%"
+    },
+    {
+      "code": "022744",
+      "name": "广发可转债债券D",
+      "daily_return": 0.69,
+      "week_1": -1.89,
+      "month_1": -8.06,
+      "month_3": -4.05,
+      "month_6": -2.73,
+      "year_1": 20.03,
+      "ytd": -4.05,
+      "fee": "0.11%"
+    },
+    {
+      "code": "010629",
+      "name": "广发可转债债券E",
+      "daily_return": 0.69,
+      "week_1": -1.89,
+      "month_1": -8.08,
+      "month_3": -4.1,
+      "month_6": -2.83,
+      "year_1": 19.79,
+      "ytd": -4.1,
+      "fee": "0.00%"
     },
     {
       "code": "024111",
@@ -881,6 +881,18 @@ const FUND_DATA_CAT1 = {
       "fee": "0.10%"
     },
     {
+      "code": "016699",
+      "name": "易方达丰和债券C",
+      "daily_return": 0.53,
+      "week_1": 0.27,
+      "month_1": 0.85,
+      "month_3": 4.18,
+      "month_6": 3.24,
+      "year_1": 8.44,
+      "ytd": 4.18,
+      "fee": "0.00%"
+    },
+    {
       "code": "001045",
       "name": "华夏可转债增强债券A",
       "daily_return": 0.53,
@@ -905,30 +917,6 @@ const FUND_DATA_CAT1 = {
       "fee": "0.00%"
     },
     {
-      "code": "016699",
-      "name": "易方达丰和债券C",
-      "daily_return": 0.53,
-      "week_1": 0.27,
-      "month_1": 0.85,
-      "month_3": 4.18,
-      "month_6": 3.24,
-      "year_1": 8.44,
-      "ytd": 4.18,
-      "fee": "0.00%"
-    },
-    {
-      "code": "240012",
-      "name": "华宝增强收益债券A",
-      "daily_return": 0.5,
-      "week_1": -1.26,
-      "month_1": -5.02,
-      "month_3": 0.18,
-      "month_6": 2.43,
-      "year_1": 25.04,
-      "ytd": 0.18,
-      "fee": "0.08%"
-    },
-    {
       "code": "310518",
       "name": "申万菱信可转债债券A",
       "daily_return": 0.5,
@@ -951,6 +939,18 @@ const FUND_DATA_CAT1 = {
       "year_1": 23.6,
       "ytd": 1.38,
       "fee": "0.00%"
+    },
+    {
+      "code": "240012",
+      "name": "华宝增强收益债券A",
+      "daily_return": 0.5,
+      "week_1": -1.26,
+      "month_1": -5.02,
+      "month_3": 0.18,
+      "month_6": 2.43,
+      "year_1": 25.04,
+      "ytd": 0.18,
+      "fee": "0.08%"
     },
     {
       "code": "240013",

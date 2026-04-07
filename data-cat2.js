@@ -1,18 +1,6 @@
 const FUND_DATA_CAT2 = {
   "指数型": [
     {
-      "code": "008327",
-      "name": "东财通信C",
-      "daily_return": 3.13,
-      "week_1": 2.98,
-      "month_1": 3.48,
-      "month_3": 16.45,
-      "month_6": 33.05,
-      "year_1": 159.38,
-      "ytd": 16.45,
-      "fee": "0.00%"
-    },
-    {
       "code": "008326",
       "name": "东财通信A",
       "daily_return": 3.13,
@@ -25,15 +13,15 @@ const FUND_DATA_CAT2 = {
       "fee": "0.10%"
     },
     {
-      "code": "020900",
-      "name": "天弘中证全指通信设备指数发起C",
-      "daily_return": 2.54,
-      "week_1": 3.78,
-      "month_1": 2.87,
-      "month_3": 7.88,
-      "month_6": 25.29,
-      "year_1": 160.07,
-      "ytd": 7.88,
+      "code": "008327",
+      "name": "东财通信C",
+      "daily_return": 3.13,
+      "week_1": 2.98,
+      "month_1": 3.48,
+      "month_3": 16.45,
+      "month_6": 33.05,
+      "year_1": 159.38,
+      "ytd": 16.45,
       "fee": "0.00%"
     },
     {
@@ -47,6 +35,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 160.59,
       "ytd": 7.94,
       "fee": "0.10%"
+    },
+    {
+      "code": "020900",
+      "name": "天弘中证全指通信设备指数发起C",
+      "daily_return": 2.54,
+      "week_1": 3.78,
+      "month_1": 2.87,
+      "month_3": 7.88,
+      "month_6": 25.29,
+      "year_1": 160.07,
+      "ytd": 7.88,
+      "fee": "0.00%"
     },
     {
       "code": "020691",
@@ -70,18 +70,6 @@ const FUND_DATA_CAT2 = {
       "month_6": 24.17,
       "year_1": 157.14,
       "ytd": 7.15,
-      "fee": "0.00%"
-    },
-    {
-      "code": "022500",
-      "name": "国泰中证全指通信设备ETF联接E",
-      "daily_return": 2.48,
-      "week_1": 3.64,
-      "month_1": 2.33,
-      "month_3": 7.42,
-      "month_6": 23.16,
-      "year_1": 152.99,
-      "ytd": 7.42,
       "fee": "0.00%"
     },
     {
@@ -109,6 +97,18 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
+      "code": "022500",
+      "name": "国泰中证全指通信设备ETF联接E",
+      "daily_return": 2.48,
+      "week_1": 3.64,
+      "month_1": 2.33,
+      "month_3": 7.42,
+      "month_6": 23.16,
+      "year_1": 152.99,
+      "ytd": 7.42,
+      "fee": "0.00%"
+    },
+    {
       "code": "019236",
       "name": "广发国证通信ETF发起式联接A",
       "daily_return": 2.31,
@@ -119,18 +119,6 @@ const FUND_DATA_CAT2 = {
       "year_1": 102.1,
       "ytd": 8.18,
       "fee": "0.12%"
-    },
-    {
-      "code": "019071",
-      "name": "嘉实国证通信ETF发起联接A",
-      "daily_return": 2.31,
-      "week_1": 3.06,
-      "month_1": 1.46,
-      "month_3": 8.57,
-      "month_6": 25.24,
-      "year_1": 104.84,
-      "ytd": 8.57,
-      "fee": "0.10%"
     },
     {
       "code": "019237",
@@ -145,6 +133,18 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
+      "code": "019071",
+      "name": "嘉实国证通信ETF发起联接A",
+      "daily_return": 2.31,
+      "week_1": 3.06,
+      "month_1": 1.46,
+      "month_3": 8.57,
+      "month_6": 25.24,
+      "year_1": 104.84,
+      "ytd": 8.57,
+      "fee": "0.10%"
+    },
+    {
       "code": "019072",
       "name": "嘉实国证通信ETF发起联接C",
       "daily_return": 2.3,
@@ -154,18 +154,6 @@ const FUND_DATA_CAT2 = {
       "month_6": 25.07,
       "year_1": 104.33,
       "ytd": 8.49,
-      "fee": "0.00%"
-    },
-    {
-      "code": "021989",
-      "name": "银河中证通信设备主题指数发起式C",
-      "daily_return": 2.26,
-      "week_1": 2.34,
-      "month_1": 1.07,
-      "month_3": 5.66,
-      "month_6": 25.61,
-      "year_1": 131.5,
-      "ytd": 5.66,
       "fee": "0.00%"
     },
     {
@@ -181,16 +169,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.10%"
     },
     {
-      "code": "021933",
-      "name": "富国中证通信设备主题ETF发起式联接A",
-      "daily_return": 2.24,
+      "code": "021989",
+      "name": "银河中证通信设备主题指数发起式C",
+      "daily_return": 2.26,
       "week_1": 2.34,
-      "month_1": 0.81,
-      "month_3": 5.95,
-      "month_6": 25.85,
-      "year_1": 132.51,
-      "ytd": 5.95,
-      "fee": "0.12%"
+      "month_1": 1.07,
+      "month_3": 5.66,
+      "month_6": 25.61,
+      "year_1": 131.5,
+      "ytd": 5.66,
+      "fee": "0.00%"
     },
     {
       "code": "021934",
@@ -203,6 +191,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 132.06,
       "ytd": 5.9,
       "fee": "0.00%"
+    },
+    {
+      "code": "021933",
+      "name": "富国中证通信设备主题ETF发起式联接A",
+      "daily_return": 2.24,
+      "week_1": 2.34,
+      "month_1": 0.81,
+      "month_3": 5.95,
+      "month_6": 25.85,
+      "year_1": 132.51,
+      "ytd": 5.95,
+      "fee": "0.12%"
     },
     {
       "code": "008086",
@@ -241,18 +241,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "010524",
-      "name": "银华中证5G通信主题ETF联接C",
-      "daily_return": 1.66,
-      "week_1": 0.44,
-      "month_1": -0.29,
-      "month_3": 2.65,
-      "month_6": 9.61,
-      "year_1": 109.42,
-      "ytd": 2.65,
-      "fee": "0.00%"
-    },
-    {
       "code": "008889",
       "name": "银华中证5G通信主题ETF联接A",
       "daily_return": 1.66,
@@ -263,6 +251,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 110.04,
       "ytd": 2.73,
       "fee": "0.12%"
+    },
+    {
+      "code": "010524",
+      "name": "银华中证5G通信主题ETF联接C",
+      "daily_return": 1.66,
+      "week_1": 0.44,
+      "month_1": -0.29,
+      "month_3": 2.65,
+      "month_6": 9.61,
+      "year_1": 109.42,
+      "ytd": 2.65,
+      "fee": "0.00%"
     },
     {
       "code": "020705",
@@ -313,18 +313,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
-      "code": "018851",
-      "name": "博时标普石油天然气勘探及生产精选行业指数发起(QDII)A人民币",
-      "daily_return": 1.24,
-      "week_1": -3.52,
-      "month_1": 11.28,
-      "month_3": 36.87,
-      "month_6": 29.59,
-      "year_1": 22.88,
-      "ytd": 36.87,
-      "fee": "0.10%"
-    },
-    {
       "code": "018853",
       "name": "博时标普石油天然气勘探及生产精选行业指数发起(QDII)C人民币",
       "daily_return": 1.24,
@@ -337,27 +325,39 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "020516",
-      "name": "华泰柏瑞东南亚科技ETF发起式联接(QDII)C",
-      "daily_return": 1.19,
-      "week_1": -1.58,
-      "month_1": -10.89,
-      "month_3": -15.8,
-      "month_6": -13.57,
-      "year_1": 2.03,
-      "ytd": -15.8,
+      "code": "018851",
+      "name": "博时标普石油天然气勘探及生产精选行业指数发起(QDII)A人民币",
+      "daily_return": 1.24,
+      "week_1": -3.52,
+      "month_1": 11.28,
+      "month_3": 36.87,
+      "month_6": 29.59,
+      "year_1": 22.88,
+      "ytd": 36.87,
+      "fee": "0.10%"
+    },
+    {
+      "code": "019786",
+      "name": "广发上证科创板成长ETF发起式联接C",
+      "daily_return": 1.16,
+      "week_1": -0.77,
+      "month_1": -1.72,
+      "month_3": 1.81,
+      "month_6": 3.65,
+      "year_1": 59.98,
+      "ytd": 1.81,
       "fee": "0.00%"
     },
     {
-      "code": "020515",
-      "name": "华泰柏瑞东南亚科技ETF发起式联接(QDII)A",
-      "daily_return": 1.18,
-      "week_1": -1.59,
-      "month_1": -10.88,
-      "month_3": -15.73,
-      "month_6": -13.49,
-      "year_1": 2.37,
-      "ytd": -15.73,
+      "code": "019785",
+      "name": "广发上证科创板成长ETF发起式联接A",
+      "daily_return": 1.16,
+      "week_1": -0.77,
+      "month_1": -1.69,
+      "month_3": 1.88,
+      "month_6": 3.81,
+      "year_1": 60.45,
+      "ytd": 1.88,
       "fee": "0.12%"
     }
   ],
@@ -387,6 +387,42 @@ const FUND_DATA_CAT2 = {
       "fee": "0.15%"
     },
     {
+      "code": "320017",
+      "name": "诺安全球收益不动产",
+      "daily_return": 1.22,
+      "week_1": 2.97,
+      "month_1": -4.95,
+      "month_3": 3.23,
+      "month_6": -0.72,
+      "year_1": -5.53,
+      "ytd": 3.23,
+      "fee": "0.15%"
+    },
+    {
+      "code": "012920",
+      "name": "易方达全球成长精选混合(QDII)人民币A",
+      "daily_return": 1.18,
+      "week_1": 3.8,
+      "month_1": 3.76,
+      "month_3": 16.15,
+      "month_6": 26.12,
+      "year_1": 120.95,
+      "ytd": 16.15,
+      "fee": "0.15%"
+    },
+    {
+      "code": "012922",
+      "name": "易方达全球成长精选混合(QDII)人民币C",
+      "daily_return": 1.18,
+      "week_1": 3.79,
+      "month_1": 3.72,
+      "month_3": 16.0,
+      "month_6": 25.79,
+      "year_1": 119.86,
+      "ytd": 16.0,
+      "fee": "0.00%"
+    },
+    {
       "code": "006105",
       "name": "宏利印度股票(QDII)A",
       "daily_return": 1.15,
@@ -399,52 +435,64 @@ const FUND_DATA_CAT2 = {
       "fee": "0.15%"
     },
     {
-      "code": "006555",
-      "name": "浦银安盛全球智能科技(QDII)A",
-      "daily_return": 1.11,
-      "week_1": 5.34,
-      "month_1": -2.21,
-      "month_3": 6.77,
-      "month_6": 12.67,
-      "year_1": 48.46,
-      "ytd": 6.77,
+      "code": "026357",
+      "name": "平安港股医疗优选股票(QDII)A",
+      "daily_return": 1.09,
+      "week_1": 11.01,
+      "month_1": 9.43,
+      "month_3": null,
+      "month_6": null,
+      "year_1": null,
+      "ytd": null,
       "fee": "0.15%"
     },
     {
-      "code": "014002",
-      "name": "浦银安盛全球智能科技(QDII)C",
-      "daily_return": 1.11,
-      "week_1": 5.33,
-      "month_1": -2.24,
-      "month_3": 6.66,
-      "month_6": 12.41,
-      "year_1": 47.76,
-      "ytd": 6.66,
+      "code": "026358",
+      "name": "平安港股医疗优选股票(QDII)C",
+      "daily_return": 1.09,
+      "week_1": 10.99,
+      "month_1": 9.36,
+      "month_3": null,
+      "month_6": null,
+      "year_1": null,
+      "ytd": null,
       "fee": "0.00%"
     },
     {
-      "code": "008254",
-      "name": "华宝致远混合(QDII)C",
-      "daily_return": 1.07,
-      "week_1": 3.8,
-      "month_1": -6.67,
-      "month_3": 7.31,
-      "month_6": 10.16,
-      "year_1": 50.39,
-      "ytd": 7.31,
-      "fee": "0.00%"
+      "code": "118001",
+      "name": "易方达亚洲精选股票",
+      "daily_return": 0.92,
+      "week_1": 0.28,
+      "month_1": -4.93,
+      "month_3": -0.14,
+      "month_6": 4.39,
+      "year_1": 36.26,
+      "ytd": -0.14,
+      "fee": "0.16%"
     },
     {
-      "code": "008253",
-      "name": "华宝致远混合(QDII)A",
-      "daily_return": 1.07,
-      "week_1": 3.81,
-      "month_1": -6.65,
-      "month_3": 7.41,
-      "month_6": 10.38,
-      "year_1": 50.98,
-      "ytd": 7.41,
+      "code": "018229",
+      "name": "易方达全球优质企业混合(QDII)A(人民币份额)",
+      "daily_return": 0.59,
+      "week_1": 1.34,
+      "month_1": -2.93,
+      "month_3": 9.74,
+      "month_6": 11.74,
+      "year_1": 68.71,
+      "ytd": 9.74,
       "fee": "0.15%"
+    },
+    {
+      "code": "018230",
+      "name": "易方达全球优质企业混合(QDII)C(人民币份额)",
+      "daily_return": 0.58,
+      "week_1": 1.32,
+      "month_1": -2.97,
+      "month_3": 9.6,
+      "month_6": 11.44,
+      "year_1": 67.74,
+      "ytd": 9.6,
+      "fee": "0.00%"
     },
     {
       "code": "206011",
@@ -483,18 +531,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.15%"
     },
     {
-      "code": "006373",
-      "name": "国富全球科技互联混合(QDII)人民币A",
-      "daily_return": 0.34,
-      "week_1": 4.01,
-      "month_1": -6.22,
-      "month_3": 15.28,
-      "month_6": 20.73,
-      "year_1": 57.07,
-      "ytd": 15.28,
-      "fee": "0.15%"
-    },
-    {
       "code": "021842",
       "name": "国富全球科技互联混合(QDII)人民币C",
       "daily_return": 0.34,
@@ -507,28 +543,88 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "017436",
-      "name": "华宝纳斯达克精选股票发起式(QDII)A",
-      "daily_return": 0.31,
-      "week_1": 2.9,
-      "month_1": -3.49,
-      "month_3": -9.0,
-      "month_6": -12.67,
-      "year_1": 24.6,
-      "ytd": -9.0,
+      "code": "006373",
+      "name": "国富全球科技互联混合(QDII)人民币A",
+      "daily_return": 0.34,
+      "week_1": 4.01,
+      "month_1": -6.22,
+      "month_3": 15.28,
+      "month_6": 20.73,
+      "year_1": 57.07,
+      "ytd": 15.28,
       "fee": "0.15%"
     },
     {
-      "code": "017437",
-      "name": "华宝纳斯达克精选股票发起式(QDII)C",
-      "daily_return": 0.31,
-      "week_1": 2.9,
-      "month_1": -3.52,
-      "month_3": -9.09,
-      "month_6": -12.85,
-      "year_1": 24.11,
-      "ytd": -9.09,
+      "code": "019156",
+      "name": "易方达全球配置混合(QDII)C(人民币)",
+      "daily_return": 0.24,
+      "week_1": 2.43,
+      "month_1": 2.03,
+      "month_3": 19.99,
+      "month_6": 15.55,
+      "year_1": 51.35,
+      "ytd": 19.99,
       "fee": "0.00%"
+    },
+    {
+      "code": "019155",
+      "name": "易方达全球配置混合(QDII)A(人民币)",
+      "daily_return": 0.24,
+      "week_1": 2.44,
+      "month_1": 2.08,
+      "month_3": 20.17,
+      "month_6": 15.89,
+      "year_1": 52.16,
+      "ytd": 20.17,
+      "fee": "0.15%"
+    },
+    {
+      "code": "014002",
+      "name": "浦银安盛全球智能科技(QDII)C",
+      "daily_return": 0.18,
+      "week_1": 5.89,
+      "month_1": 2.38,
+      "month_3": 6.85,
+      "month_6": 12.61,
+      "year_1": 57.31,
+      "ytd": 6.85,
+      "fee": "0.00%"
+    },
+    {
+      "code": "006555",
+      "name": "浦银安盛全球智能科技(QDII)A",
+      "daily_return": 0.18,
+      "week_1": 5.9,
+      "month_1": 2.41,
+      "month_3": 6.95,
+      "month_6": 12.87,
+      "year_1": 58.05,
+      "ytd": 6.95,
+      "fee": "0.15%"
+    },
+    {
+      "code": "021694",
+      "name": "银华抗通胀主题(QDII-FOF-LOF)C",
+      "daily_return": 0.17,
+      "week_1": 3.35,
+      "month_1": 1.21,
+      "month_3": 19.11,
+      "month_6": 27.39,
+      "year_1": 39.86,
+      "ytd": 19.11,
+      "fee": "0.00%"
+    },
+    {
+      "code": "378546",
+      "name": "摩根全球天然资源混合(QDII)A",
+      "daily_return": 0.1,
+      "week_1": 2.2,
+      "month_1": -5.2,
+      "month_3": 17.48,
+      "month_6": 24.97,
+      "year_1": 47.73,
+      "ytd": 17.48,
+      "fee": "0.16%"
     },
     {
       "code": "019578",
@@ -543,15 +639,51 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "378546",
-      "name": "摩根全球天然资源混合(QDII)A",
-      "daily_return": 0.1,
-      "week_1": 2.2,
-      "month_1": -5.2,
-      "month_3": 17.48,
-      "month_6": 24.97,
-      "year_1": 47.73,
-      "ytd": 17.48,
+      "code": "165513",
+      "name": "中信保诚全球商品主题(QDII-FOF-LOF)A",
+      "daily_return": 0.09,
+      "week_1": 2.9,
+      "month_1": -7.84,
+      "month_3": 4.95,
+      "month_6": 14.55,
+      "year_1": 37.12,
+      "ytd": 4.95,
+      "fee": "0.16%"
+    },
+    {
+      "code": "020969",
+      "name": "中信保诚全球商品主题(QDII-FOF-LOF)C",
+      "daily_return": 0.09,
+      "week_1": 2.9,
+      "month_1": -7.85,
+      "month_3": 4.87,
+      "month_6": 14.43,
+      "year_1": 36.53,
+      "ytd": 4.87,
+      "fee": "0.00%"
+    },
+    {
+      "code": "008284",
+      "name": "易方达全球医药行业混合发起式(QDII)A(人民币)",
+      "daily_return": 0.08,
+      "week_1": 8.86,
+      "month_1": 19.34,
+      "month_3": 13.23,
+      "month_6": -7.64,
+      "year_1": 58.31,
+      "ytd": 13.23,
+      "fee": "0.15%"
+    },
+    {
+      "code": "161815",
+      "name": "银华抗通胀主题(QDII-FOF-LOF)A",
+      "daily_return": 0.08,
+      "week_1": 3.32,
+      "month_1": 1.29,
+      "month_3": 19.29,
+      "month_6": 27.81,
+      "year_1": 40.6,
+      "ytd": 19.29,
       "fee": "0.16%"
     },
     {
@@ -579,148 +711,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.15%"
     },
     {
-      "code": "017204",
-      "name": "华宝海外科技股票(QDII-LOF)C",
-      "daily_return": 0.06,
-      "week_1": 1.79,
-      "month_1": -6.16,
-      "month_3": -5.52,
-      "month_6": -5.84,
-      "year_1": 30.38,
-      "ytd": -5.52,
+      "code": "019573",
+      "name": "摩根中国生物医药混合(QDII)C",
+      "daily_return": 0.07,
+      "week_1": 10.97,
+      "month_1": 14.04,
+      "month_3": 8.9,
+      "month_6": -9.72,
+      "year_1": 24.9,
+      "ytd": 8.9,
       "fee": "0.00%"
-    },
-    {
-      "code": "501312",
-      "name": "华宝海外科技股票(QDII-LOF)A",
-      "daily_return": 0.06,
-      "week_1": 1.8,
-      "month_1": -6.13,
-      "month_3": -5.44,
-      "month_6": -5.7,
-      "year_1": 30.76,
-      "ytd": -5.44,
-      "fee": "0.12%"
-    },
-    {
-      "code": "050020",
-      "name": "博时抗通胀增强回报",
-      "daily_return": 0.0,
-      "week_1": 3.35,
-      "month_1": -2.99,
-      "month_3": 1.15,
-      "month_6": 2.83,
-      "year_1": 23.4,
-      "ytd": 1.15,
-      "fee": "0.15%"
-    },
-    {
-      "code": "100050",
-      "name": "富国全球债券(QDII)人民币A",
-      "daily_return": -0.02,
-      "week_1": 0.35,
-      "month_1": -1.21,
-      "month_3": -1.39,
-      "month_6": -1.94,
-      "year_1": -0.51,
-      "ytd": -1.39,
-      "fee": "0.08%"
-    },
-    {
-      "code": "019518",
-      "name": "富国全球债券(QDII)人民币C",
-      "daily_return": -0.02,
-      "week_1": 0.35,
-      "month_1": -1.23,
-      "month_3": -1.46,
-      "month_6": -2.06,
-      "year_1": -0.76,
-      "ytd": -1.46,
-      "fee": "0.00%"
-    },
-    {
-      "code": "017145",
-      "name": "华宝海外新能源汽车股票发起式(QDII)C",
-      "daily_return": -0.14,
-      "week_1": 2.4,
-      "month_1": -1.3,
-      "month_3": -11.57,
-      "month_6": -20.1,
-      "year_1": 22.35,
-      "ytd": -11.57,
-      "fee": "0.00%"
-    },
-    {
-      "code": "017144",
-      "name": "华宝海外新能源汽车股票发起式(QDII)A",
-      "daily_return": -0.14,
-      "week_1": 2.41,
-      "month_1": -1.27,
-      "month_3": -11.48,
-      "month_6": -19.94,
-      "year_1": 22.83,
-      "ytd": -11.48,
-      "fee": "0.15%"
-    },
-    {
-      "code": "020512",
-      "name": "摩根海外稳健配置混合(QDII-FOF)人民币C",
-      "daily_return": -0.19,
-      "week_1": -0.12,
-      "month_1": -0.71,
-      "month_3": -1.8,
-      "month_6": -2.08,
-      "year_1": -1.53,
-      "ytd": -1.8,
-      "fee": "0.00%"
-    },
-    {
-      "code": "017970",
-      "name": "摩根海外稳健配置混合(QDII-FOF)人民币A",
-      "daily_return": -0.19,
-      "week_1": -0.11,
-      "month_1": -0.67,
-      "month_3": -1.69,
-      "month_6": -1.88,
-      "year_1": -1.14,
-      "ytd": -1.69,
-      "fee": "0.20%"
-    },
-    {
-      "code": "000043",
-      "name": "嘉实美国成长股票人民币",
-      "daily_return": -0.21,
-      "week_1": 2.41,
-      "month_1": -4.5,
-      "month_3": -6.31,
-      "month_6": -5.9,
-      "year_1": 19.57,
-      "ytd": -6.31,
-      "fee": "0.15%"
-    },
-    {
-      "code": "164212",
-      "name": "天弘全球新能源汽车股票(QDII-LOF)A",
-      "daily_return": -0.29,
-      "week_1": 2.27,
-      "month_1": -4.61,
-      "month_3": 4.59,
-      "month_6": 7.93,
-      "year_1": 48.53,
-      "ytd": 4.59,
-      "fee": "0.12%"
-    },
-    {
-      "code": "164824",
-      "name": "工银印度基金人民币",
-      "daily_return": -0.39,
-      "week_1": -0.46,
-      "month_1": -8.84,
-      "month_3": -14.94,
-      "month_6": -13.36,
-      "year_1": -13.92,
-      "ytd": -14.94,
-      "fee": "0.12%"
     }
   ],
   "FOF": [
@@ -773,18 +773,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
-      "code": "018674",
-      "name": "渤海汇金优选进取6个月持有混合发起(FOF)A",
-      "daily_return": 2.56,
-      "week_1": 0.06,
-      "month_1": -8.35,
-      "month_3": -4.85,
-      "month_6": -6.13,
-      "year_1": 20.7,
-      "ytd": -4.85,
-      "fee": "0.08%"
-    },
-    {
       "code": "018675",
       "name": "渤海汇金优选进取6个月持有混合发起(FOF)C",
       "daily_return": 2.56,
@@ -795,6 +783,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 20.25,
       "ytd": -4.94,
       "fee": "0.00%"
+    },
+    {
+      "code": "018674",
+      "name": "渤海汇金优选进取6个月持有混合发起(FOF)A",
+      "daily_return": 2.56,
+      "week_1": 0.06,
+      "month_1": -8.35,
+      "month_3": -4.85,
+      "month_6": -6.13,
+      "year_1": 20.7,
+      "ytd": -4.85,
+      "fee": "0.08%"
     },
     {
       "code": "008169",
@@ -821,18 +821,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
-      "code": "016622",
-      "name": "平安盈诚积极配置6个月持有混合(FOF)C",
-      "daily_return": 2.4,
-      "week_1": -0.85,
-      "month_1": -9.55,
-      "month_3": 0.26,
-      "month_6": -0.49,
-      "year_1": 29.04,
-      "ytd": 0.26,
-      "fee": "0.00%"
-    },
-    {
       "code": "016621",
       "name": "平安盈诚积极配置6个月持有混合(FOF)A",
       "daily_return": 2.4,
@@ -845,15 +833,15 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
-      "code": "970195",
-      "name": "兴证资管金麒麟3个月(FOF)C",
-      "daily_return": 2.38,
-      "week_1": 0.44,
-      "month_1": -6.56,
-      "month_3": 0.44,
-      "month_6": -1.69,
-      "year_1": 25.24,
-      "ytd": 0.44,
+      "code": "016622",
+      "name": "平安盈诚积极配置6个月持有混合(FOF)C",
+      "daily_return": 2.4,
+      "week_1": -0.85,
+      "month_1": -9.55,
+      "month_3": 0.26,
+      "month_6": -0.49,
+      "year_1": 29.04,
+      "ytd": 0.26,
       "fee": "0.00%"
     },
     {
@@ -869,16 +857,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.15%"
     },
     {
-      "code": "019657",
-      "name": "万家优选积极三个月持有期混合发起式(FOF)A",
-      "daily_return": 2.3,
-      "week_1": 0.3,
-      "month_1": -7.37,
-      "month_3": 0.82,
-      "month_6": -0.32,
-      "year_1": 29.07,
-      "ytd": 0.82,
-      "fee": "0.15%"
+      "code": "970195",
+      "name": "兴证资管金麒麟3个月(FOF)C",
+      "daily_return": 2.38,
+      "week_1": 0.44,
+      "month_1": -6.56,
+      "month_3": 0.44,
+      "month_6": -1.69,
+      "year_1": 25.24,
+      "ytd": 0.44,
+      "fee": "0.00%"
     },
     {
       "code": "019658",
@@ -891,6 +879,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 28.56,
       "ytd": 0.72,
       "fee": "0.00%"
+    },
+    {
+      "code": "019657",
+      "name": "万家优选积极三个月持有期混合发起式(FOF)A",
+      "daily_return": 2.3,
+      "week_1": 0.3,
+      "month_1": -7.37,
+      "month_3": 0.82,
+      "month_6": -0.32,
+      "year_1": 29.07,
+      "ytd": 0.82,
+      "fee": "0.15%"
     },
     {
       "code": "018286",
@@ -929,18 +929,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "015221",
-      "name": "汇添富积极回报一年持有混合(FOF)A",
-      "daily_return": 2.25,
-      "week_1": -0.04,
-      "month_1": -8.55,
-      "month_3": -0.82,
-      "month_6": -3.18,
-      "year_1": 22.99,
-      "ytd": -0.82,
-      "fee": "0.12%"
-    },
-    {
       "code": "011593",
       "name": "农银汇理安瑞一年持有混合(FOF)",
       "daily_return": 2.25,
@@ -953,6 +941,18 @@ const FUND_DATA_CAT2 = {
       "fee": "0.08%"
     },
     {
+      "code": "015221",
+      "name": "汇添富积极回报一年持有混合(FOF)A",
+      "daily_return": 2.25,
+      "week_1": -0.04,
+      "month_1": -8.55,
+      "month_3": -0.82,
+      "month_6": -3.18,
+      "year_1": 22.99,
+      "ytd": -0.82,
+      "fee": "0.12%"
+    },
+    {
       "code": "009322",
       "name": "广发锐意进取3个月持有混合(FOF)C",
       "daily_return": 2.22,
@@ -962,18 +962,6 @@ const FUND_DATA_CAT2 = {
       "month_6": -3.15,
       "year_1": 20.87,
       "ytd": -1.25,
-      "fee": "0.00%"
-    },
-    {
-      "code": "016147",
-      "name": "工银安裕积极一年持有混合(FOF)C",
-      "daily_return": 2.22,
-      "week_1": 0.33,
-      "month_1": -6.52,
-      "month_3": 0.11,
-      "month_6": -5.66,
-      "year_1": 17.83,
-      "ytd": 0.11,
       "fee": "0.00%"
     },
     {
@@ -1001,28 +989,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
-      "code": "007897",
-      "name": "易方达优选多资产三个月持有混合(FOF)C",
-      "daily_return": 2.2,
-      "week_1": 0.62,
-      "month_1": -6.88,
-      "month_3": -2.66,
-      "month_6": -2.17,
-      "year_1": 16.06,
-      "ytd": -2.66,
+      "code": "016147",
+      "name": "工银安裕积极一年持有混合(FOF)C",
+      "daily_return": 2.22,
+      "week_1": 0.33,
+      "month_1": -6.52,
+      "month_3": 0.11,
+      "month_6": -5.66,
+      "year_1": 17.83,
+      "ytd": 0.11,
       "fee": "0.00%"
-    },
-    {
-      "code": "007896",
-      "name": "易方达优选多资产三个月持有混合(FOF)A",
-      "daily_return": 2.19,
-      "week_1": 0.62,
-      "month_1": -6.85,
-      "month_3": -2.57,
-      "month_6": -1.98,
-      "year_1": 16.52,
-      "ytd": -2.57,
-      "fee": "0.12%"
     },
     {
       "code": "012896",
@@ -1073,6 +1049,18 @@ const FUND_DATA_CAT2 = {
       "fee": "0.12%"
     },
     {
+      "code": "024016",
+      "name": "万家启尊价值三个月持有期混合发起式(FOF)C",
+      "daily_return": 2.15,
+      "week_1": 0.35,
+      "month_1": -7.27,
+      "month_3": -0.03,
+      "month_6": 0.03,
+      "year_1": null,
+      "ytd": -0.03,
+      "fee": "0.00%"
+    },
+    {
       "code": "024015",
       "name": "万家启尊价值三个月持有期混合发起式(FOF)A",
       "daily_return": 2.15,
@@ -1083,6 +1071,18 @@ const FUND_DATA_CAT2 = {
       "year_1": null,
       "ytd": 0.08,
       "fee": "0.15%"
+    },
+    {
+      "code": "012791",
+      "name": "汇添富聚焦经典一年持有混合(FOF)A",
+      "daily_return": 2.11,
+      "week_1": -0.05,
+      "month_1": -7.96,
+      "month_3": 0.5,
+      "month_6": -0.23,
+      "year_1": 26.18,
+      "ytd": 0.5,
+      "fee": "0.12%"
     }
   ]
 };
