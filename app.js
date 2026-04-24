@@ -23,6 +23,19 @@
     return sign + n.toFixed(2) + '亿';
   }
 
+  // Escape untrusted strings before inserting into innerHTML
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  // Whitelist for fund type values used as CSS class suffixes
+  const VALID_FUND_TYPES = new Set(['股票型', '混合型', '债券型', '指数型', 'QDII', 'FOF', '其他']);
+
   function colorClass(val) {
     if (val == null || isNaN(val)) return 'val-flat';
     if (val > 0) return 'val-up';
@@ -92,7 +105,7 @@
       const cc = colorClass(idx.change_pct);
       return `
         <div class="idx-card">
-          <div class="idx-name">${idx.name}</div>
+          <div class="idx-name">${escapeHtml(idx.name)}</div>
           <div class="idx-price ${cc}">${fmtNum(idx.price, 2)}</div>
           <div class="idx-detail ${cc}">
             <span>${fmtPct(idx.change_pct)}</span>
@@ -131,8 +144,8 @@
       else bg = 'rgba(15,150,65,0.85)';
 
       return `
-        <div class="hm-cell" style="width:${size}px;height:${Math.round(size * 0.6)}px;background:${bg};flex-grow:${Math.round(ratio * 10)}" title="${b.name}: ${fmtPct(b.change_pct)} | 领涨: ${b.leader_name} ${fmtPct(b.leader_change_pct)}">
-          <span class="hm-name">${b.name}</span>
+        <div class="hm-cell" style="width:${size}px;height:${Math.round(size * 0.6)}px;background:${bg};flex-grow:${Math.round(ratio * 10)}" title="${escapeHtml(b.name)}: ${fmtPct(b.change_pct)} | 领涨: ${escapeHtml(b.leader_name)} ${fmtPct(b.leader_change_pct)}">
+          <span class="hm-name">${escapeHtml(b.name)}</span>
           <span class="hm-pct">${b.change_pct > 0 ? '+' : ''}${b.change_pct.toFixed(2)}%</span>
         </div>`;
     }).join('');
@@ -143,7 +156,7 @@
     const tbody = $('#flowBody');
     tbody.innerHTML = data.fund_flow.map(row => {
       return `<tr>
-        <td>${row.date}</td>
+        <td>${escapeHtml(row.date)}</td>
         <td class="${colorClass(row.main_net_inflow)}">${fmtYi(row.main_net_inflow)}</td>
         <td class="${colorClass(row.super_large_net)}">${fmtYi(row.super_large_net)}</td>
         <td class="${colorClass(row.large_net)}">${fmtYi(row.large_net)}</td>
@@ -189,7 +202,8 @@
         rankHtml = rank;
       }
 
-      const fType = f.type || '其他';
+      // Whitelist fund type to prevent CSS class injection
+      const fType = VALID_FUND_TYPES.has(f.type) ? f.type : '其他';
       const typeClass = 'type-' + fType;
 
       const pctCell = (val) => {
@@ -199,9 +213,9 @@
 
       return `<tr>
         <td>${rankHtml}</td>
-        <td>${f.code}</td>
-        <td title="${f.name}">${f.name}</td>
-        <td><span class="type-badge ${typeClass}">${fType}</span></td>
+        <td>${escapeHtml(f.code)}</td>
+        <td title="${escapeHtml(f.name)}">${escapeHtml(f.name)}</td>
+        <td><span class="type-badge ${typeClass}">${escapeHtml(fType)}</span></td>
         ${pctCell(f.daily_return)}
         ${pctCell(f.week_1)}
         ${pctCell(f.month_1)}
@@ -209,7 +223,7 @@
         ${pctCell(f.month_6)}
         ${pctCell(f.year_1)}
         ${pctCell(f.ytd)}
-        <td>${f.fee || '—'}</td>
+        <td>${escapeHtml(f.fee || '—')}</td>
       </tr>`;
     }).join('');
 
@@ -271,10 +285,10 @@
       <div class="insight-card">
         <div class="insight-label">今日涨幅最高基金</div>
         <div class="insight-value">
-          ${topFund.name}
+          ${escapeHtml(topFund.name)}
           <span class="highlight-up">(${fmtPct(topFund.daily_return)})</span>
         </div>
-        <div class="insight-sub">基金代码 ${topFund.code} · ${topFund.type} · 近1月${fmtPct(topFund.month_1)}</div>
+        <div class="insight-sub">基金代码 ${escapeHtml(topFund.code)} · ${escapeHtml(topFund.type)} · 近1月${fmtPct(topFund.month_1)}</div>
       </div>`;
 
     // 2. Top 3 industry sectors
@@ -283,9 +297,9 @@
       <div class="insight-card">
         <div class="insight-label">今日涨幅行业板块 Top 3</div>
         <div class="insight-value">
-          ${topBoards.map((b, i) => `${b.name} <span class="highlight-up">${fmtPct(b.change_pct)}</span>`).join('、')}
+          ${topBoards.map((b, i) => `${escapeHtml(b.name)} <span class="highlight-up">${fmtPct(b.change_pct)}</span>`).join('、')}
         </div>
-        <div class="insight-sub">领涨个股: ${topBoards.map(b => b.leader_name).join('、')}</div>
+        <div class="insight-sub">领涨个股: ${topBoards.map(b => escapeHtml(b.leader_name)).join('、')}</div>
       </div>`;
 
     // 3. 5-day main flow
@@ -319,7 +333,7 @@
       consistentHtml = '<span style="color:var(--color-text-muted)">暂无同时在三个维度排名前列的基金</span>';
     } else {
       consistentHtml = consistent.map(f =>
-        `${f.name} <span class="highlight-up">(日${fmtPct(f.daily_return)} / 月${fmtPct(f.month_1)} / 3月${fmtPct(f.month_3)})</span>`
+        `${escapeHtml(f.name)} <span class="highlight-up">(日${fmtPct(f.daily_return)} / 月${fmtPct(f.month_1)} / 3月${fmtPct(f.month_3)})</span>`
       ).join('<br>');
     }
 

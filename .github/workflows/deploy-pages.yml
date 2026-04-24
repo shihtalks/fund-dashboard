@@ -23,6 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check for sensitive files
+        run: |
+          if git ls-files | grep -qiE '\.(env|pem|key|p12|pfx|crt|secret)$|^secrets?\.|credentials\.'; then
+            echo "::error::Potentially sensitive file detected — aborting deployment"
+            exit 1
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

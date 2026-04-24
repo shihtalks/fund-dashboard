@@ -6,11 +6,41 @@
 import json
 import re
 import sys
+import time
 from datetime import datetime
 
 import akshare as ak
 import pandas as pd
 import requests
+
+# Strip HTML tags from strings sourced from external APIs.
+# JavaScript's escapeHtml() handles final encoding at render time;
+# this layer removes injected markup before it reaches the data files.
+_HTML_TAG_RE = re.compile(r'<[^>]*>')
+
+def sanitize_str(s):
+    return _HTML_TAG_RE.sub('', str(s)) if s is not None else ''
+
+
+def requests_get(url, max_retries=3, **kwargs):
+    """GET with exponential backoff and rate-limit handling."""
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(url, **kwargs)
+            if resp.status_code == 429:
+                wait = int(resp.headers.get('Retry-After', 60))
+                print(f"  Rate limited, waiting {wait}s...")
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as e:
+            if attempt < max_retries - 1:
+                delay = 2 ** attempt
+                print(f"  Request failed ({e}), retrying in {delay}s...")
+                time.sleep(delay)
+            else:
+                raise
 
 
 def fetch_indices():
@@ -32,15 +62,15 @@ def fetch_indices():
         "000300": "沪深300", "000688": "科创50", "000016": "上证50", "899050": "北证50",
     }
     try:
-        resp = requests.get(url, params=params, headers=headers, timeout=15)
+        resp = requests_get(url, params=params, headers=headers, timeout=15)
         data = resp.json()
         if data.get("data") and data["data"].get("diff"):
             indices = []
             for item in data["data"]["diff"]:
                 code = item.get("f12", "")
                 indices.append({
-                    "code": code,
-                    "name": name_map.get(code, item.get("f14", "")),
+                    "code": sanitize_str(code),
+                    "name": sanitize_str(name_map.get(code, item.get("f14", ""))),
                     "price": item.get("f2", 0),
                     "change_pct": item.get("f3", 0),
                     "change_amt": item.get("f4", 0),
@@ -63,7 +93,7 @@ def fetch_industry_boards():
     print("Fetching industry boards...")
     try:
         url = "https://vip.stock.finance.sina.com.cn/q/view/newSinaHy.php"
-        resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        resp = requests_get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
         match = re.search(r"=\\s*({.*})", resp.text, re.DOTALL)
         if match:
             raw = json.loads(match.group(1))
@@ -72,12 +102,12 @@ def fetch_industry_boards():
                 parts = val.split(",")
                 if len(parts) >= 13:
                     boards.append({
-                        "name": parts[1],
+                        "name": sanitize_str(parts[1]),
                         "stock_count": int(parts[2]),
                         "change_pct": round(float(parts[5]), 2),
                         "volume": int(parts[6]),
                         "amount": int(parts[7]),
-                        "leader_name": parts[12],
+                        "leader_name": sanitize_str(parts[12]),
                         "leader_change_pct": round(float(parts[9]), 2),
                     })
             boards.sort(key=lambda x: x["change_pct"], reverse=True)
@@ -96,7 +126,7 @@ def fetch_fund_flow():
         flows = []
         for _, row in df.tail(5).iterrows():
             flows.append({
-                "date": str(row["日期"])[:10],
+                "date": sanitize_str(str(row["日期"])[:10]),
                 "sh_close": round(float(row["上证-收盘价"]), 2),
                 "sh_change": round(float(row["上证-涨跌幅"]), 2),
                 "sz_close": round(float(row["深证-收盘价"]), 2),
@@ -142,9 +172,9 @@ def fetch_top_funds():
         funds = []
         for _, row in df.head(50).iterrows():
             funds.append({
-                "code": str(row["基金代码"]),
-                "name": str(row["基金简称"]),
-                "date": str(row["日期"]),
+                "code": sanitize_str(row["基金代码"]),
+                "name": sanitize_str(row["基金简称"]),
+                "date": sanitize_str(str(row["日期"])),
                 "nav": round(float(row["单位净值"]), 4) if pd.notna(row["单位净值"]) else None,
                 "acc_nav": round(float(row["累计净值"]), 4) if pd.notna(row["累计净值"]) else None,
                 "daily_return": round(float(row["日增长率"]), 2),
@@ -155,7 +185,7 @@ def fetch_top_funds():
                 "year_1": round(float(row["近1年"]), 2) if pd.notna(row["近1年"]) else None,
                 "ytd": round(float(row["今年来"]), 2) if pd.notna(row["今年来"]) else None,
                 "since_inception": round(float(row["成立来"]), 2) if pd.notna(row["成立来"]) else None,
-                "fee": str(row["手续费"]) if pd.notna(row["手续费"]) else None,
+                "fee": sanitize_str(row["手续费"]) if pd.notna(row["手续费"]) else None,
                 "type": classify_fund(row["基金简称"]),
             })
         print(f"  Got {len(funds)} funds")
@@ -177,8 +207,8 @@ def fetch_category_funds():
             top = []
             for _, row in df.head(30).iterrows():
                 top.append({
-                    "code": str(row["基金代码"]),
-                    "name": str(row["基金简称"]),
+                    "code": sanitize_str(row["基金代码"]),
+                    "name": sanitize_str(row["基金简称"]),
                     "daily_return": round(float(row["日增长率"]), 2),
                     "week_1": round(float(row["近1周"]), 2) if pd.notna(row["近1周"]) else None,
                     "month_1": round(float(row["近1月"]), 2) if pd.notna(row["近1月"]) else None,
@@ -186,7 +216,7 @@ def fetch_category_funds():
                     "month_6": round(float(row["近6月"]), 2) if pd.notna(row["近6月"]) else None,
                     "year_1": round(float(row["近1年"]), 2) if pd.notna(row["近1年"]) else None,
                     "ytd": round(float(row["今年来"]), 2) if pd.notna(row["今年来"]) else None,
-                    "fee": str(row["手续费"]) if pd.notna(row["手续费"]) else None,
+                    "fee": sanitize_str(row["手续费"]) if pd.notna(row["手续费"]) else None,
                 })
             category_funds[symbol] = top
             print(f"  {symbol}: {len(top)} funds")
@@ -202,6 +232,11 @@ def main():
     data["fund_flow"] = fetch_fund_flow()
     data["top_funds"] = fetch_top_funds()
     data["category_funds"] = fetch_category_funds()
+
+    if not data["top_funds"]:
+        print("ERROR: No fund data collected. Aborting to avoid publishing empty data.", file=sys.stderr)
+        sys.exit(1)
+
     data["metadata"] = {
         "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "trading_date": data["top_funds"][0]["date"] if data["top_funds"] else datetime.now().strftime("%Y-%m-%d"),
