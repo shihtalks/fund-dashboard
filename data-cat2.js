@@ -25,18 +25,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.05%"
     },
     {
-      "code": "022725",
-      "name": "博时上证科创板芯片ETF发起式联接A",
-      "daily_return": 6.03,
-      "week_1": 12.13,
-      "month_1": 32.7,
-      "month_3": 11.05,
-      "month_6": 28.98,
-      "year_1": 90.41,
-      "ytd": 30.01,
-      "fee": "0.10%"
-    },
-    {
       "code": "022726",
       "name": "博时上证科创板芯片ETF发起式联接C",
       "daily_return": 6.03,
@@ -47,6 +35,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 90.22,
       "ytd": 29.97,
       "fee": "0.00%"
+    },
+    {
+      "code": "022725",
+      "name": "博时上证科创板芯片ETF发起式联接A",
+      "daily_return": 6.03,
+      "week_1": 12.13,
+      "month_1": 32.7,
+      "month_3": 11.05,
+      "month_6": 28.98,
+      "year_1": 90.41,
+      "ytd": 30.01,
+      "fee": "0.10%"
     },
     {
       "code": "021607",
@@ -73,18 +73,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "024854",
-      "name": "国泰上证科创板芯片ETF发起联接C",
-      "daily_return": 6.01,
-      "week_1": 12.0,
-      "month_1": 32.53,
-      "month_3": 11.02,
-      "month_6": 28.85,
-      "year_1": null,
-      "ytd": 29.82,
-      "fee": "0.00%"
-    },
-    {
       "code": "024853",
       "name": "国泰上证科创板芯片ETF发起联接A",
       "daily_return": 6.01,
@@ -95,6 +83,18 @@ const FUND_DATA_CAT2 = {
       "year_1": null,
       "ytd": 29.91,
       "fee": "0.10%"
+    },
+    {
+      "code": "024854",
+      "name": "国泰上证科创板芯片ETF发起联接C",
+      "daily_return": 6.01,
+      "week_1": 12.0,
+      "month_1": 32.53,
+      "month_3": 11.02,
+      "month_6": 28.85,
+      "year_1": null,
+      "ytd": 29.82,
+      "fee": "0.00%"
     },
     {
       "code": "017470",
@@ -193,18 +193,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.05%"
     },
     {
-      "code": "017560",
-      "name": "华安上证科创板芯片ETF发起式联接C",
-      "daily_return": 5.96,
-      "week_1": 11.92,
-      "month_1": 32.38,
-      "month_3": 11.03,
-      "month_6": 28.38,
-      "year_1": 89.56,
-      "ytd": 29.72,
-      "fee": "0.00%"
-    },
-    {
       "code": "017559",
       "name": "华安上证科创板芯片ETF发起式联接A",
       "daily_return": 5.96,
@@ -215,6 +203,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 89.94,
       "ytd": 29.8,
       "fee": "0.05%"
+    },
+    {
+      "code": "017560",
+      "name": "华安上证科创板芯片ETF发起式联接C",
+      "daily_return": 5.96,
+      "week_1": 11.92,
+      "month_1": 32.38,
+      "month_3": 11.03,
+      "month_6": 28.38,
+      "year_1": 89.56,
+      "ytd": 29.72,
+      "fee": "0.00%"
     },
     {
       "code": "025315",
@@ -277,18 +277,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.10%"
     },
     {
-      "code": "024246",
-      "name": "广发上证科创板人工智能ETF发起式联接C",
-      "daily_return": 5.83,
-      "week_1": 6.52,
-      "month_1": 20.35,
-      "month_3": -2.89,
-      "month_6": 10.12,
-      "year_1": null,
-      "ytd": 13.5,
-      "fee": "0.00%"
-    },
-    {
       "code": "024764",
       "name": "富国上证科创板人工智能ETF发起式联接C",
       "daily_return": 5.83,
@@ -298,6 +286,18 @@ const FUND_DATA_CAT2 = {
       "month_6": 10.46,
       "year_1": null,
       "ytd": 13.87,
+      "fee": "0.00%"
+    },
+    {
+      "code": "024246",
+      "name": "广发上证科创板人工智能ETF发起式联接C",
+      "daily_return": 5.83,
+      "week_1": 6.52,
+      "month_1": 20.35,
+      "month_3": -2.89,
+      "month_6": 10.12,
+      "year_1": null,
+      "ytd": 13.5,
       "fee": "0.00%"
     },
     {
@@ -325,18 +325,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "024774",
-      "name": "永赢上证科创板人工智能指数发起A",
-      "daily_return": 5.81,
-      "week_1": 6.43,
-      "month_1": 20.2,
-      "month_3": -2.67,
-      "month_6": 9.76,
-      "year_1": null,
-      "ytd": 13.31,
-      "fee": "0.10%"
-    },
-    {
       "code": "024409",
       "name": "鑫元科创AI指数发起式A",
       "daily_return": 5.81,
@@ -347,6 +335,18 @@ const FUND_DATA_CAT2 = {
       "year_1": null,
       "ytd": 14.07,
       "fee": "0.12%"
+    },
+    {
+      "code": "024774",
+      "name": "永赢上证科创板人工智能指数发起A",
+      "daily_return": 5.81,
+      "week_1": 6.43,
+      "month_1": 20.2,
+      "month_3": -2.67,
+      "month_6": 9.76,
+      "year_1": null,
+      "ytd": 13.31,
+      "fee": "0.10%"
     },
     {
       "code": "024776",
@@ -821,18 +821,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "014027",
-      "name": "易方达优选星汇六个月持有混合(FOF)C",
-      "daily_return": 1.66,
-      "week_1": 0.29,
-      "month_1": 12.2,
-      "month_3": 3.34,
-      "month_6": 10.49,
-      "year_1": 66.93,
-      "ytd": 13.22,
-      "fee": "0.00%"
-    },
-    {
       "code": "014026",
       "name": "易方达优选星汇六个月持有混合(FOF)A",
       "daily_return": 1.66,
@@ -843,6 +831,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 67.78,
       "ytd": 13.4,
       "fee": "0.12%"
+    },
+    {
+      "code": "014027",
+      "name": "易方达优选星汇六个月持有混合(FOF)C",
+      "daily_return": 1.66,
+      "week_1": 0.29,
+      "month_1": 12.2,
+      "month_3": 3.34,
+      "month_6": 10.49,
+      "year_1": 66.93,
+      "ytd": 13.22,
+      "fee": "0.00%"
     },
     {
       "code": "501210",
@@ -869,18 +869,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "019132",
-      "name": "广发积极回报3个月持有混合(FOF)A",
-      "daily_return": 1.47,
-      "week_1": -0.86,
-      "month_1": 7.2,
-      "month_3": -5.4,
-      "month_6": 0.39,
-      "year_1": 33.84,
-      "ytd": 3.06,
-      "fee": "0.15%"
-    },
-    {
       "code": "019133",
       "name": "广发积极回报3个月持有混合(FOF)C",
       "daily_return": 1.47,
@@ -891,6 +879,18 @@ const FUND_DATA_CAT2 = {
       "year_1": 33.31,
       "ytd": 2.93,
       "fee": "0.00%"
+    },
+    {
+      "code": "019132",
+      "name": "广发积极回报3个月持有混合(FOF)A",
+      "daily_return": 1.47,
+      "week_1": -0.86,
+      "month_1": 7.2,
+      "month_3": -5.4,
+      "month_6": 0.39,
+      "year_1": 33.84,
+      "ytd": 3.06,
+      "fee": "0.15%"
     },
     {
       "code": "012652",
@@ -917,6 +917,18 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
+      "code": "021643",
+      "name": "国联安积极配置3个月持有混合(FOF)A",
+      "daily_return": 1.42,
+      "week_1": 0.83,
+      "month_1": 4.43,
+      "month_3": -3.64,
+      "month_6": 5.67,
+      "year_1": 29.9,
+      "ytd": 6.23,
+      "fee": "0.08%"
+    },
+    {
       "code": "021644",
       "name": "国联安积极配置3个月持有混合(FOF)C",
       "daily_return": 1.42,
@@ -929,16 +941,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "021643",
-      "name": "国联安积极配置3个月持有混合(FOF)A",
-      "daily_return": 1.42,
-      "week_1": 0.83,
-      "month_1": 4.43,
-      "month_3": -3.64,
-      "month_6": 5.67,
-      "year_1": 29.9,
-      "ytd": 6.23,
-      "fee": "0.08%"
+      "code": "012936",
+      "name": "民生加银积极配置6个月持有混合(FOF)",
+      "daily_return": 1.4,
+      "week_1": 0.11,
+      "month_1": 10.57,
+      "month_3": 1.09,
+      "month_6": 8.89,
+      "year_1": 37.9,
+      "ytd": 9.66,
+      "fee": "0.06%"
     },
     {
       "code": "016989",
@@ -965,18 +977,6 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "012936",
-      "name": "民生加银积极配置6个月持有混合(FOF)",
-      "daily_return": 1.4,
-      "week_1": 0.11,
-      "month_1": 10.57,
-      "month_3": 1.09,
-      "month_6": 8.89,
-      "year_1": 37.9,
-      "ytd": 9.66,
-      "fee": "0.06%"
-    },
-    {
       "code": "005925",
       "name": "建信福泽裕泰混合(FOF)A",
       "daily_return": 1.39,
@@ -1001,16 +1001,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "005220",
-      "name": "海富通聚优精选混合(FOF)A",
+      "code": "015083",
+      "name": "易方达优势驱动一年持有混合(FOF)A",
       "daily_return": 1.33,
-      "week_1": -0.47,
-      "month_1": 8.48,
-      "month_3": 1.73,
-      "month_6": 6.76,
-      "year_1": 40.09,
-      "ytd": 9.52,
-      "fee": "0.15%"
+      "week_1": -0.27,
+      "month_1": 16.09,
+      "month_3": 9.27,
+      "month_6": 16.07,
+      "year_1": 90.87,
+      "ytd": 20.29,
+      "fee": "0.12%"
     },
     {
       "code": "015084",
@@ -1025,16 +1025,16 @@ const FUND_DATA_CAT2 = {
       "fee": "0.00%"
     },
     {
-      "code": "015083",
-      "name": "易方达优势驱动一年持有混合(FOF)A",
+      "code": "005220",
+      "name": "海富通聚优精选混合(FOF)A",
       "daily_return": 1.33,
-      "week_1": -0.27,
-      "month_1": 16.09,
-      "month_3": 9.27,
-      "month_6": 16.07,
-      "year_1": 90.87,
-      "ytd": 20.29,
-      "fee": "0.12%"
+      "week_1": -0.47,
+      "month_1": 8.48,
+      "month_3": 1.73,
+      "month_6": 6.76,
+      "year_1": 40.09,
+      "ytd": 9.52,
+      "fee": "0.15%"
     },
     {
       "code": "890008",
