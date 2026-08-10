@@ -3,536 +3,536 @@ const FUND_DATA_MARKET = {
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 3940.04,
-      "change_pct": 1.02,
-      "change_amt": 39.69,
-      "volume": 1209543573294.4,
-      "high": 3940.93,
-      "low": 3885.62,
-      "open": 3896.49,
-      "prev_close": 3900.35,
-      "amplitude": 1.42
+      "price": 3966.59,
+      "change_pct": 0.67,
+      "change_amt": 26.55,
+      "volume": 1166893282353.8,
+      "high": 3967.59,
+      "low": 3938.63,
+      "open": 3943.82,
+      "prev_close": 3940.04,
+      "amplitude": 0.74
     },
     {
       "code": "399001",
       "name": "混证成指",
-      "price": 14311.01,
-      "change_pct": 1.42,
-      "change_amt": 200.89,
-      "volume": 1454876177586.0613,
-      "high": 14396.07,
-      "low": 14049.34,
-      "open": 14152.78,
-      "prev_close": 14110.12,
-      "amplitude": 2.46
+      "price": 14316.96,
+      "change_pct": 0.04,
+      "change_amt": 5.95,
+      "volume": 1356209535367.7256,
+      "high": 14373.77,
+      "low": 14102.66,
+      "open": 14348.95,
+      "prev_close": 14311.01,
+      "amplitude": 1.89
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3563.12,
-      "change_pct": 1.35,
-      "change_amt": 47.56,
-      "volume": 734824333658.66,
-      "high": 3613.87,
-      "low": 3507.62,
-      "open": 3537.44,
-      "prev_close": 3515.56,
-      "amplitude": 3.02
+      "price": 3537.21,
+      "change_pct": -0.73,
+      "change_amt": -25.91,
+      "volume": 661467082326.97,
+      "high": 3575.59,
+      "low": 3470.95,
+      "open": 3567.05,
+      "prev_close": 3563.12,
+      "amplitude": 2.94
     },
     {
       "code": "000300",
       "name": "沪深300",
-      "price": 4694.44,
-      "change_pct": 0.93,
-      "change_amt": 43.13,
-      "volume": 788405762429.7,
-      "high": 4706.73,
-      "low": 4649.58,
-      "open": 4656.1,
-      "prev_close": 4651.31,
-      "amplitude": 1.23
+      "price": 4702.02,
+      "change_pct": 0.16,
+      "change_amt": 7.58,
+      "volume": 733103396912.2,
+      "high": 4714.46,
+      "low": 4659.47,
+      "open": 4698.82,
+      "prev_close": 4694.44,
+      "amplitude": 1.17
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1744.02,
-      "change_pct": 2.51,
-      "change_amt": 42.73,
-      "volume": 136268941852.0,
-      "high": 1747.74,
-      "low": 1686.66,
-      "open": 1697.37,
-      "prev_close": 1701.29,
-      "amplitude": 3.59
+      "price": 1737.77,
+      "change_pct": -0.36,
+      "change_amt": -6.25,
+      "volume": 128470941791.0,
+      "high": 1752.93,
+      "low": 1704.08,
+      "open": 1740.14,
+      "prev_close": 1744.02,
+      "amplitude": 2.8
     },
     {
       "code": "000016",
       "name": "上证50",
-      "price": 2960.42,
-      "change_pct": 1.38,
-      "change_amt": 40.29,
-      "volume": 203484735764.0,
-      "high": 2960.94,
-      "low": 2913.59,
-      "open": 2917.44,
-      "prev_close": 2920.13,
-      "amplitude": 1.62
+      "price": 2967.73,
+      "change_pct": 0.25,
+      "change_amt": 7.31,
+      "volume": 209769474230.0,
+      "high": 2980.64,
+      "low": 2954.62,
+      "open": 2963.24,
+      "prev_close": 2960.42,
+      "amplitude": 0.88
     },
     {
       "code": "899050",
       "name": "北证50",
-      "price": 1134.25,
-      "change_pct": 1.01,
-      "change_amt": 11.37,
-      "volume": 19150247913.0,
-      "high": 1135.65,
-      "low": 1108.54,
-      "open": 1120.88,
-      "prev_close": 1122.88,
-      "amplitude": 2.41
+      "price": 1122.88,
+      "change_pct": -1.0,
+      "change_amt": -11.37,
+      "volume": 15769469231.0,
+      "high": 1142.03,
+      "low": 1121.77,
+      "open": 1142.03,
+      "prev_close": 1134.25,
+      "amplitude": 1.79
     }
   ],
   "industry_boards": [
     {
-      "name": "玻璃行业",
-      "stock_count": 19,
-      "change_pct": 4.36,
-      "volume": 938514036,
-      "amount": 25437696452,
-      "leader_name": "菲利华",
-      "leader_change_pct": 9.49
+      "name": "服装鞋类",
+      "stock_count": 49,
+      "change_pct": 3.09,
+      "volume": 1559987544,
+      "amount": 10980499342,
+      "leader_name": "开开实业",
+      "leader_change_pct": 10.02
     },
     {
-      "name": "有色金属",
-      "stock_count": 72,
-      "change_pct": 4.17,
-      "volume": 5435813128,
-      "amount": 123448358344,
-      "leader_name": "中国稀土",
-      "leader_change_pct": 10.0
-    },
-    {
-      "name": "生物制药",
-      "stock_count": 155,
-      "change_pct": 3.16,
-      "volume": 5247210531,
-      "amount": 62990647655,
-      "leader_name": "博腾股份",
-      "leader_change_pct": 20.02
-    },
-    {
-      "name": "次新股",
-      "stock_count": 145,
-      "change_pct": 2.98,
-      "volume": 1252361376,
-      "amount": 70390091044,
-      "leader_name": "锐翔智能",
-      "leader_change_pct": 20.21
-    },
-    {
-      "name": "医疗器械",
-      "stock_count": 31,
-      "change_pct": 2.96,
-      "volume": 491644473,
-      "amount": 10043005258,
-      "leader_name": "博济医药",
-      "leader_change_pct": 9.99
-    },
-    {
-      "name": "化纤行业",
-      "stock_count": 26,
-      "change_pct": 2.82,
-      "volume": 816320567,
-      "amount": 11723084466,
-      "leader_name": "中材科技",
-      "leader_change_pct": 9.78
-    },
-    {
-      "name": "电子器件",
-      "stock_count": 152,
-      "change_pct": 2.6,
-      "volume": 10896518406,
-      "amount": 238806469083,
-      "leader_name": "依顿电子",
-      "leader_change_pct": 10.04
-    },
-    {
-      "name": "陶瓷行业",
-      "stock_count": 8,
-      "change_pct": 1.91,
-      "volume": 102296597,
-      "amount": 2731938563,
-      "leader_name": "道氏技术",
-      "leader_change_pct": 6.05
-    },
-    {
-      "name": "仪器仪表",
-      "stock_count": 48,
-      "change_pct": 1.61,
-      "volume": 1498730189,
-      "amount": 31428994381,
-      "leader_name": "飞乐音响",
+      "name": "造纸行业",
+      "stock_count": 24,
+      "change_pct": 2.99,
+      "volume": 753065168,
+      "amount": 5856896563,
+      "leader_name": "宜宾纸业",
       "leader_change_pct": 9.97
     },
     {
-      "name": "化工行业",
-      "stock_count": 150,
-      "change_pct": 1.38,
-      "volume": 5029588215,
-      "amount": 95248673216,
-      "leader_name": "保利联合",
-      "leader_change_pct": 10.01
+      "name": "农林牧渔",
+      "stock_count": 64,
+      "change_pct": 2.89,
+      "volume": 2093253427,
+      "amount": 16547538947,
+      "leader_name": "百洋股份",
+      "leader_change_pct": 10.04
     },
     {
-      "name": "塑料制品",
+      "name": "酿酒行业",
       "stock_count": 33,
-      "change_pct": 1.32,
-      "volume": 721698094,
-      "amount": 6787460011,
-      "leader_name": "银禧科技",
-      "leader_change_pct": 10.85
+      "change_pct": 2.66,
+      "volume": 381283324,
+      "amount": 20545018097,
+      "leader_name": "天佑德酒",
+      "leader_change_pct": 6.03
     },
     {
-      "name": "家具行业",
-      "stock_count": 16,
-      "change_pct": 1.31,
-      "volume": 240975074,
-      "amount": 2647936401,
-      "leader_name": "德尔未来",
-      "leader_change_pct": 10.01
-    },
-    {
-      "name": "电器行业",
+      "name": "食品行业",
       "stock_count": 58,
-      "change_pct": 1.3,
-      "volume": 1623721205,
-      "amount": 29726677502,
-      "leader_name": "阳光电源",
-      "leader_change_pct": 6.99
-    },
-    {
-      "name": "飞机制造",
-      "stock_count": 14,
-      "change_pct": 1.22,
-      "volume": 358666387,
-      "amount": 9127735471,
-      "leader_name": "中国卫星",
-      "leader_change_pct": 5.13
-    },
-    {
-      "name": "电子信息",
-      "stock_count": 247,
-      "change_pct": 0.9,
-      "volume": 11592959403,
-      "amount": 246032846347,
-      "leader_name": "武汉凡谷",
-      "leader_change_pct": 10.01
-    },
-    {
-      "name": "水泥行业",
-      "stock_count": 26,
-      "change_pct": 0.76,
-      "volume": 433135471,
-      "amount": 3340223462,
-      "leader_name": "宁夏建材",
-      "leader_change_pct": 10.01
+      "change_pct": 2.56,
+      "volume": 1538427164,
+      "amount": 15632258433,
+      "leader_name": "皇氏集团",
+      "leader_change_pct": 10.16
     },
     {
       "name": "房地产",
       "stock_count": 123,
-      "change_pct": 0.68,
-      "volume": 4204732051,
-      "amount": 22289907360,
-      "leader_name": "招金黄金",
-      "leader_change_pct": 10.01
+      "change_pct": 2.53,
+      "volume": 4192193285,
+      "amount": 20630210959,
+      "leader_name": "金科股份",
+      "leader_change_pct": 10.26
     },
     {
-      "name": "其它行业",
-      "stock_count": 202,
-      "change_pct": 0.61,
-      "volume": 1372069843,
-      "amount": 23039860977,
-      "leader_name": "四方达",
-      "leader_change_pct": 5.49
+      "name": "酒店旅游",
+      "stock_count": 35,
+      "change_pct": 2.46,
+      "volume": 592440611,
+      "amount": 7480144431,
+      "leader_name": "北京文化",
+      "leader_change_pct": 10.07
     },
     {
-      "name": "物资外贸",
-      "stock_count": 21,
-      "change_pct": 0.53,
-      "volume": 383351338,
-      "amount": 2436534713,
-      "leader_name": "中化国际",
+      "name": "环保行业",
+      "stock_count": 27,
+      "change_pct": 2.34,
+      "volume": 592447114,
+      "amount": 3503080835,
+      "leader_name": "维尔利",
+      "leader_change_pct": 6.89
+    },
+    {
+      "name": "飞机制造",
+      "stock_count": 14,
+      "change_pct": 2.28,
+      "volume": 410451943,
+      "amount": 10609070713,
+      "leader_name": "洪都航空",
+      "leader_change_pct": 9.98
+    },
+    {
+      "name": "有色金属",
+      "stock_count": 72,
+      "change_pct": 2.22,
+      "volume": 5215628987,
+      "amount": 127300186828,
+      "leader_name": "中钨高新",
+      "leader_change_pct": 8.64
+    },
+    {
+      "name": "化工行业",
+      "stock_count": 150,
+      "change_pct": 2.17,
+      "volume": 5195867477,
+      "amount": 95185425300,
+      "leader_name": "鹏欣资源",
+      "leader_change_pct": 10.03
+    },
+    {
+      "name": "供水供气",
+      "stock_count": 25,
+      "change_pct": 2.01,
+      "volume": 502984023,
+      "amount": 3293043151,
+      "leader_name": "江南水务",
       "leader_change_pct": 9.98
     },
     {
       "name": "农药化肥",
       "stock_count": 46,
-      "change_pct": 0.51,
-      "volume": 1279571628,
-      "amount": 11440864008,
-      "leader_name": "国发股份",
-      "leader_change_pct": 6.83
-    },
-    {
-      "name": "电力行业",
-      "stock_count": 62,
-      "change_pct": 0.46,
-      "volume": 3402816362,
-      "amount": 29138664481,
-      "leader_name": "华银电力",
-      "leader_change_pct": 10.06
-    },
-    {
-      "name": "汽车制造",
-      "stock_count": 103,
-      "change_pct": 0.45,
-      "volume": 2445628979,
-      "amount": 32916146853,
-      "leader_name": "华懋科技",
-      "leader_change_pct": 8.19
-    },
-    {
-      "name": "发电设备",
-      "stock_count": 65,
-      "change_pct": 0.4,
-      "volume": 2326903627,
-      "amount": 33311689306,
-      "leader_name": "聆达股份",
-      "leader_change_pct": 10.02
-    },
-    {
-      "name": "石油行业",
-      "stock_count": 24,
-      "change_pct": 0.29,
-      "volume": 992321073,
-      "amount": 6671246781,
-      "leader_name": "潜能恒信",
-      "leader_change_pct": 3.54
-    },
-    {
-      "name": "煤炭行业",
-      "stock_count": 41,
-      "change_pct": 0.27,
-      "volume": 2471288979,
-      "amount": 23268040162,
-      "leader_name": "百花医药",
-      "leader_change_pct": 10.02
-    },
-    {
-      "name": "传媒娱乐",
-      "stock_count": 40,
-      "change_pct": 0.25,
-      "volume": 1021726875,
-      "amount": 9092930898,
-      "leader_name": "中文在线",
-      "leader_change_pct": 6.9
-    },
-    {
-      "name": "商业百货",
-      "stock_count": 93,
-      "change_pct": 0.25,
-      "volume": 2185564926,
-      "amount": 13855348366,
-      "leader_name": "瑞康医药",
-      "leader_change_pct": 10.14
-    },
-    {
-      "name": "酿酒行业",
-      "stock_count": 33,
-      "change_pct": 0.23,
-      "volume": 340846463,
-      "amount": 13188890847,
-      "leader_name": "泸州老窖",
-      "leader_change_pct": 1.87
-    },
-    {
-      "name": "印刷包装",
-      "stock_count": 20,
-      "change_pct": 0.13,
-      "volume": 1177479141,
-      "amount": 12970045675,
-      "leader_name": "中锐股份",
-      "leader_change_pct": 3.82
-    },
-    {
-      "name": "公路桥梁",
-      "stock_count": 20,
-      "change_pct": 0.1,
-      "volume": 222849189,
-      "amount": 1340964788,
-      "leader_name": "粤高速Ａ",
-      "leader_change_pct": 4.3
-    },
-    {
-      "name": "家电行业",
-      "stock_count": 37,
-      "change_pct": 0.01,
-      "volume": 1216753387,
-      "amount": 13545854366,
-      "leader_name": "禾盛新材",
-      "leader_change_pct": 6.66
-    },
-    {
-      "name": "钢铁行业",
-      "stock_count": 60,
-      "change_pct": -0.08,
-      "volume": 2321538391,
-      "amount": 9858219735,
-      "leader_name": "金洲管道",
-      "leader_change_pct": 10.02
-    },
-    {
-      "name": "船舶制造",
-      "stock_count": 8,
-      "change_pct": -0.11,
-      "volume": 225913057,
-      "amount": 4362633678,
-      "leader_name": "ST亚光",
-      "leader_change_pct": 1.77
-    },
-    {
-      "name": "酒店旅游",
-      "stock_count": 35,
-      "change_pct": -0.15,
-      "volume": 589331421,
-      "amount": 7402263050,
-      "leader_name": "西藏旅游",
-      "leader_change_pct": 1.89
-    },
-    {
-      "name": "金融行业",
-      "stock_count": 51,
-      "change_pct": -0.17,
-      "volume": 3704583270,
-      "amount": 37792776231,
-      "leader_name": "长江证券",
-      "leader_change_pct": 1.23
+      "change_pct": 2.01,
+      "volume": 1393454281,
+      "amount": 13484720373,
+      "leader_name": "赤天化",
+      "leader_change_pct": 9.88
     },
     {
       "name": "摩托车",
       "stock_count": 6,
-      "change_pct": -0.17,
-      "volume": 183935804,
-      "amount": 2545121260,
-      "leader_name": "宗申动力",
-      "leader_change_pct": 3.52
+      "change_pct": 1.88,
+      "volume": 170986875,
+      "amount": 2362205272,
+      "leader_name": "电科芯片",
+      "leader_change_pct": 4.82
     },
     {
-      "name": "食品行业",
-      "stock_count": 58,
-      "change_pct": -0.3,
-      "volume": 1323468240,
-      "amount": 13946228075,
-      "leader_name": "金达威",
-      "leader_change_pct": 7.78
+      "name": "商业百货",
+      "stock_count": 93,
+      "change_pct": 1.82,
+      "volume": 2229753902,
+      "amount": 14097026146,
+      "leader_name": "大东方",
+      "leader_change_pct": 10.06
     },
     {
-      "name": "服装鞋类",
-      "stock_count": 49,
-      "change_pct": -0.31,
-      "volume": 1386408279,
-      "amount": 9708966356,
-      "leader_name": "开开实业",
-      "leader_change_pct": 10.01
+      "name": "物资外贸",
+      "stock_count": 21,
+      "change_pct": 1.81,
+      "volume": 497134408,
+      "amount": 3084447435,
+      "leader_name": "五矿发展",
+      "leader_change_pct": 6.1
     },
     {
-      "name": "机械行业",
-      "stock_count": 211,
-      "change_pct": -0.31,
-      "volume": 5525396130,
-      "amount": 119570048034,
-      "leader_name": "劲拓股份",
-      "leader_change_pct": 17.76
+      "name": "钢铁行业",
+      "stock_count": 60,
+      "change_pct": 1.8,
+      "volume": 2076299196,
+      "amount": 9960877470,
+      "leader_name": "华民股份",
+      "leader_change_pct": 10.02
     },
     {
-      "name": "供水供气",
-      "stock_count": 25,
-      "change_pct": -0.33,
-      "volume": 521885285,
-      "amount": 3278738815,
-      "leader_name": "德龙汇能",
-      "leader_change_pct": 5.11
+      "name": "印刷包装",
+      "stock_count": 20,
+      "change_pct": 1.76,
+      "volume": 1037174865,
+      "amount": 11207779911,
+      "leader_name": "陕西金叶",
+      "leader_change_pct": 6.09
     },
     {
-      "name": "建筑建材",
-      "stock_count": 91,
-      "change_pct": -0.36,
-      "volume": 2542289383,
-      "amount": 13549249832,
-      "leader_name": "冀衡医药",
-      "leader_change_pct": 10.13
-    },
-    {
-      "name": "农林牧渔",
-      "stock_count": 64,
-      "change_pct": -0.36,
-      "volume": 1838322722,
-      "amount": 14656323594,
-      "leader_name": "通威股份",
-      "leader_change_pct": 6.25
-    },
-    {
-      "name": "环保行业",
-      "stock_count": 27,
-      "change_pct": -0.56,
-      "volume": 488178839,
-      "amount": 2997389855,
-      "leader_name": "*ST启环",
-      "leader_change_pct": 2.92
-    },
-    {
-      "name": "纺织机械",
-      "stock_count": 8,
-      "change_pct": -0.62,
-      "volume": 85216564,
-      "amount": 583524282,
-      "leader_name": "物产金轮",
-      "leader_change_pct": 0.16
-    },
-    {
-      "name": "交通运输",
-      "stock_count": 87,
-      "change_pct": -0.65,
-      "volume": 2278784789,
-      "amount": 15033274047,
-      "leader_name": "蔚蓝锂芯",
-      "leader_change_pct": 3.88
-    },
-    {
-      "name": "造纸行业",
-      "stock_count": 24,
-      "change_pct": -0.77,
-      "volume": 792530589,
-      "amount": 5824263143,
-      "leader_name": "景兴纸业",
-      "leader_change_pct": 1.56
-    },
-    {
-      "name": "开发区",
-      "stock_count": 10,
-      "change_pct": -0.79,
-      "volume": 124427514,
-      "amount": 1894640225,
-      "leader_name": "派斯林",
-      "leader_change_pct": 0.96
+      "name": "汽车制造",
+      "stock_count": 103,
+      "change_pct": 1.69,
+      "volume": 2464213047,
+      "amount": 34867762467,
+      "leader_name": "湖南天雁",
+      "leader_change_pct": 10.06
     },
     {
       "name": "综合行业",
       "stock_count": 33,
-      "change_pct": -0.82,
-      "volume": 714222125,
-      "amount": 3317496058,
-      "leader_name": "*ST高科",
-      "leader_change_pct": 1.9
+      "change_pct": 1.66,
+      "volume": 663855343,
+      "amount": 3360718197,
+      "leader_name": "同济科技",
+      "leader_change_pct": 7.17
+    },
+    {
+      "name": "煤炭行业",
+      "stock_count": 41,
+      "change_pct": 1.65,
+      "volume": 2119034208,
+      "amount": 20105966246,
+      "leader_name": "百花医药",
+      "leader_change_pct": 9.96
+    },
+    {
+      "name": "建筑建材",
+      "stock_count": 91,
+      "change_pct": 1.64,
+      "volume": 2515597626,
+      "amount": 13351991606,
+      "leader_name": "江河集团",
+      "leader_change_pct": 10.04
     },
     {
       "name": "纺织行业",
       "stock_count": 42,
-      "change_pct": -1.07,
-      "volume": 540893401,
-      "amount": 3603937720,
-      "leader_name": "海欣股份",
-      "leader_change_pct": 5.68
+      "change_pct": 1.58,
+      "volume": 521845014,
+      "amount": 3578079832,
+      "leader_name": "ST如意",
+      "leader_change_pct": 10.05
+    },
+    {
+      "name": "纺织机械",
+      "stock_count": 8,
+      "change_pct": 1.57,
+      "volume": 81605900,
+      "amount": 528582741,
+      "leader_name": "中毅达",
+      "leader_change_pct": 2.28
+    },
+    {
+      "name": "船舶制造",
+      "stock_count": 8,
+      "change_pct": 1.41,
+      "volume": 245466371,
+      "amount": 4318488536,
+      "leader_name": "中船防务",
+      "leader_change_pct": 3.6
+    },
+    {
+      "name": "发电设备",
+      "stock_count": 65,
+      "change_pct": 1.35,
+      "volume": 2698988273,
+      "amount": 36206827599,
+      "leader_name": "中能电气",
+      "leader_change_pct": 15.43
+    },
+    {
+      "name": "传媒娱乐",
+      "stock_count": 40,
+      "change_pct": 1.34,
+      "volume": 1071359761,
+      "amount": 9692088514,
+      "leader_name": "儒意电影",
+      "leader_change_pct": 9.97
+    },
+    {
+      "name": "家电行业",
+      "stock_count": 37,
+      "change_pct": 1.28,
+      "volume": 1185353828,
+      "amount": 13500791670,
+      "leader_name": "九阳股份",
+      "leader_change_pct": 4.67
+    },
+    {
+      "name": "交通运输",
+      "stock_count": 87,
+      "change_pct": 1.22,
+      "volume": 2285517118,
+      "amount": 15456945946,
+      "leader_name": "新宁物流",
+      "leader_change_pct": 7.61
+    },
+    {
+      "name": "家具行业",
+      "stock_count": 16,
+      "change_pct": 1.2,
+      "volume": 296497091,
+      "amount": 3251015142,
+      "leader_name": "ST美克",
+      "leader_change_pct": 9.89
+    },
+    {
+      "name": "电器行业",
+      "stock_count": 58,
+      "change_pct": 1.15,
+      "volume": 1725376731,
+      "amount": 26496859047,
+      "leader_name": "中电鑫龙",
+      "leader_change_pct": 10.01
+    },
+    {
+      "name": "塑料制品",
+      "stock_count": 33,
+      "change_pct": 1.15,
+      "volume": 795313736,
+      "amount": 7387918319,
+      "leader_name": "国风新材",
+      "leader_change_pct": 10.05
+    },
+    {
+      "name": "化纤行业",
+      "stock_count": 26,
+      "change_pct": 1.09,
+      "volume": 816647901,
+      "amount": 11671872235,
+      "leader_name": "恒申新材",
+      "leader_change_pct": 4.32
+    },
+    {
+      "name": "开发区",
+      "stock_count": 10,
+      "change_pct": 0.9,
+      "volume": 109529199,
+      "amount": 1811194996,
+      "leader_name": "电子城",
+      "leader_change_pct": 2.28
+    },
+    {
+      "name": "其它行业",
+      "stock_count": 202,
+      "change_pct": 0.85,
+      "volume": 1140162211,
+      "amount": 19364903655,
+      "leader_name": "ST中路B",
+      "leader_change_pct": 10.08
+    },
+    {
+      "name": "生物制药",
+      "stock_count": 155,
+      "change_pct": 0.72,
+      "volume": 5216480602,
+      "amount": 63736760916,
+      "leader_name": "海普瑞",
+      "leader_change_pct": 10.04
+    },
+    {
+      "name": "水泥行业",
+      "stock_count": 26,
+      "change_pct": 0.69,
+      "volume": 408006797,
+      "amount": 2996766705,
+      "leader_name": "华新建材",
+      "leader_change_pct": 5.12
+    },
+    {
+      "name": "石油行业",
+      "stock_count": 24,
+      "change_pct": 0.66,
+      "volume": 960947757,
+      "amount": 6316099150,
+      "leader_name": "新锦动力",
+      "leader_change_pct": 4.54
+    },
+    {
+      "name": "电力行业",
+      "stock_count": 62,
+      "change_pct": 0.59,
+      "volume": 3582210849,
+      "amount": 31740542508,
+      "leader_name": "银星能源",
+      "leader_change_pct": 6.86
+    },
+    {
+      "name": "医疗器械",
+      "stock_count": 31,
+      "change_pct": 0.28,
+      "volume": 587485592,
+      "amount": 11028295961,
+      "leader_name": "奥佳华",
+      "leader_change_pct": 5.24
+    },
+    {
+      "name": "电子器件",
+      "stock_count": 152,
+      "change_pct": 0.15,
+      "volume": 9049387367,
+      "amount": 202162315721,
+      "leader_name": "宇顺电子",
+      "leader_change_pct": 10.0
+    },
+    {
+      "name": "陶瓷行业",
+      "stock_count": 8,
+      "change_pct": 0.1,
+      "volume": 95324088,
+      "amount": 2465527789,
+      "leader_name": "悦心健康",
+      "leader_change_pct": 3.5
+    },
+    {
+      "name": "金融行业",
+      "stock_count": 51,
+      "change_pct": -0.03,
+      "volume": 3273013440,
+      "amount": 34950545390,
+      "leader_name": "渤海租赁",
+      "leader_change_pct": 2.65
+    },
+    {
+      "name": "仪器仪表",
+      "stock_count": 48,
+      "change_pct": -0.19,
+      "volume": 1278377606,
+      "amount": 25225680963,
+      "leader_name": "奥普光电",
+      "leader_change_pct": 8.2
+    },
+    {
+      "name": "公路桥梁",
+      "stock_count": 20,
+      "change_pct": -0.35,
+      "volume": 258899823,
+      "amount": 1525068805,
+      "leader_name": "湖南投资",
+      "leader_change_pct": 3.69
+    },
+    {
+      "name": "电子信息",
+      "stock_count": 247,
+      "change_pct": -0.72,
+      "volume": 9383944979,
+      "amount": 202692725613,
+      "leader_name": "*ST宁视",
+      "leader_change_pct": 10.33
+    },
+    {
+      "name": "机械行业",
+      "stock_count": 211,
+      "change_pct": -0.76,
+      "volume": 5185561040,
+      "amount": 105210391446,
+      "leader_name": "*ST动力",
+      "leader_change_pct": 10.6
+    },
+    {
+      "name": "玻璃行业",
+      "stock_count": 19,
+      "change_pct": -0.85,
+      "volume": 773439200,
+      "amount": 20560879740,
+      "leader_name": "亚玛顿",
+      "leader_change_pct": 7.59
+    },
+    {
+      "name": "次新股",
+      "stock_count": 144,
+      "change_pct": -1.37,
+      "volume": 1168936107,
+      "amount": 66974941300,
+      "leader_name": "托伦斯",
+      "leader_change_pct": 9.73
     }
   ],
   "fund_flow": []
