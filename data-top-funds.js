@@ -1,23 +1,6 @@
 const FUND_DATA_TOP = {
   "top_funds": [
     {
-      "code": "019115",
-      "name": "东财卓越成长A",
-      "date": "2026-08-31",
-      "nav": 1.3321,
-      "acc_nav": 1.3321,
-      "daily_return": 7.55,
-      "week_1": 9.82,
-      "month_1": -1.37,
-      "month_3": -7.27,
-      "month_6": -22.67,
-      "year_1": -7.13,
-      "ytd": -4.14,
-      "since_inception": 33.21,
-      "fee": "0.15%",
-      "type": "股票型"
-    },
-    {
       "code": "019116",
       "name": "东财卓越成长C",
       "date": "2026-08-31",
@@ -32,6 +15,23 @@ const FUND_DATA_TOP = {
       "ytd": -4.49,
       "since_inception": 30.59,
       "fee": "0.00%",
+      "type": "股票型"
+    },
+    {
+      "code": "019115",
+      "name": "东财卓越成长A",
+      "date": "2026-08-31",
+      "nav": 1.3321,
+      "acc_nav": 1.3321,
+      "daily_return": 7.55,
+      "week_1": 9.82,
+      "month_1": -1.37,
+      "month_3": -7.27,
+      "month_6": -22.67,
+      "year_1": -7.13,
+      "ytd": -4.14,
+      "since_inception": 33.21,
+      "fee": "0.15%",
       "type": "股票型"
     },
     {
@@ -222,23 +222,6 @@ const FUND_DATA_TOP = {
       "type": "股票型"
     },
     {
-      "code": "020065",
-      "name": "西部利得科技创新混合C",
-      "date": "2026-08-31",
-      "nav": 1.6245,
-      "acc_nav": 1.6245,
-      "daily_return": 5.66,
-      "week_1": 7.5,
-      "month_1": 12.91,
-      "month_3": -7.8,
-      "month_6": -15.74,
-      "year_1": 9.19,
-      "ytd": 4.85,
-      "since_inception": 62.45,
-      "fee": "0.00%",
-      "type": "混合型"
-    },
-    {
       "code": "020064",
       "name": "西部利得科技创新混合A",
       "date": "2026-08-31",
@@ -256,19 +239,19 @@ const FUND_DATA_TOP = {
       "type": "混合型"
     },
     {
-      "code": "010052",
-      "name": "长城久嘉创新成长混合C",
+      "code": "020065",
+      "name": "西部利得科技创新混合C",
       "date": "2026-08-31",
-      "nav": 2.5031,
-      "acc_nav": 2.7523,
-      "daily_return": 5.55,
-      "week_1": 7.18,
-      "month_1": 20.28,
-      "month_3": -13.28,
-      "month_6": -12.17,
-      "year_1": 32.24,
-      "ytd": -3.75,
-      "since_inception": 59.34,
+      "nav": 1.6245,
+      "acc_nav": 1.6245,
+      "daily_return": 5.66,
+      "week_1": 7.5,
+      "month_1": 12.91,
+      "month_3": -7.8,
+      "month_6": -15.74,
+      "year_1": 9.19,
+      "ytd": 4.85,
+      "since_inception": 62.45,
       "fee": "0.00%",
       "type": "混合型"
     },
@@ -287,6 +270,23 @@ const FUND_DATA_TOP = {
       "ytd": -3.43,
       "since_inception": 200.2,
       "fee": "0.15%",
+      "type": "混合型"
+    },
+    {
+      "code": "010052",
+      "name": "长城久嘉创新成长混合C",
+      "date": "2026-08-31",
+      "nav": 2.5031,
+      "acc_nav": 2.7523,
+      "daily_return": 5.55,
+      "week_1": 7.18,
+      "month_1": 20.28,
+      "month_3": -13.28,
+      "month_6": -12.17,
+      "year_1": 32.24,
+      "ytd": -3.75,
+      "since_inception": 59.34,
+      "fee": "0.00%",
       "type": "混合型"
     },
     {
@@ -358,23 +358,6 @@ const FUND_DATA_TOP = {
       "type": "混合型"
     },
     {
-      "code": "013346",
-      "name": "富荣信息技术混合C",
-      "date": "2026-08-31",
-      "nav": 1.2669,
-      "acc_nav": 1.2669,
-      "daily_return": 4.86,
-      "week_1": 9.01,
-      "month_1": 13.41,
-      "month_3": -0.31,
-      "month_6": 13.41,
-      "year_1": 20.1,
-      "ytd": 34.95,
-      "since_inception": 26.69,
-      "fee": "0.00%",
-      "type": "混合型"
-    },
-    {
       "code": "013345",
       "name": "富荣信息技术混合A",
       "date": "2026-08-31",
@@ -389,6 +372,23 @@ const FUND_DATA_TOP = {
       "ytd": 35.31,
       "since_inception": 29.17,
       "fee": "0.15%",
+      "type": "混合型"
+    },
+    {
+      "code": "013346",
+      "name": "富荣信息技术混合C",
+      "date": "2026-08-31",
+      "nav": 1.2669,
+      "acc_nav": 1.2669,
+      "daily_return": 4.86,
+      "week_1": 9.01,
+      "month_1": 13.41,
+      "month_3": -0.31,
+      "month_6": 13.41,
+      "year_1": 20.1,
+      "ytd": 34.95,
+      "since_inception": 26.69,
+      "fee": "0.00%",
       "type": "混合型"
     },
     {
@@ -494,6 +494,23 @@ const FUND_DATA_TOP = {
       "type": "混合型"
     },
     {
+      "code": "023603",
+      "name": "泰信优势领航混合D",
+      "date": "2026-08-31",
+      "nav": 0.8506,
+      "acc_nav": 0.8506,
+      "daily_return": 4.51,
+      "week_1": 9.57,
+      "month_1": 0.14,
+      "month_3": -9.59,
+      "month_6": -20.33,
+      "year_1": -21.04,
+      "ytd": -19.48,
+      "since_inception": -2.0,
+      "fee": "0.00%",
+      "type": "混合型"
+    },
+    {
       "code": "023602",
       "name": "泰信优势领航混合C",
       "date": "2026-08-31",
@@ -525,23 +542,6 @@ const FUND_DATA_TOP = {
       "ytd": -19.21,
       "since_inception": -14.35,
       "fee": "0.15%",
-      "type": "混合型"
-    },
-    {
-      "code": "023603",
-      "name": "泰信优势领航混合D",
-      "date": "2026-08-31",
-      "nav": 0.8506,
-      "acc_nav": 0.8506,
-      "daily_return": 4.51,
-      "week_1": 9.57,
-      "month_1": 0.14,
-      "month_3": -9.59,
-      "month_6": -20.33,
-      "year_1": -21.04,
-      "ytd": -19.48,
-      "since_inception": -2.0,
-      "fee": "0.00%",
       "type": "混合型"
     },
     {
